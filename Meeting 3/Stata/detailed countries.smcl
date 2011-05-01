@@ -1,0 +1,45 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+       log:  {res}C:\Users\netbook\Dropbox\uni\intellectual capital\meeting 3\Stata\detailed countries.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}26 Apr 2011, 12:46:37
+
+{com}. do "C:\Users\netbook\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. foreach x in numlist 5 6  {c -(}
+{txt}  2{com}.                 reg lnwage hours educ literacy yos if country = "x"
+{txt}  3{com}.    {c )-}
+{err}type mismatch
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\netbook\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. foreach x in numlist 5 6  {c -(}
+{txt}  2{com}.  reg lnwage hours educ literacy yos if country = 'x'
+{txt}  3{com}.    {c )-}
+{err}'x' invalid name
+{txt}{search r(198):r(198);}
+
+end of do-file
+
+{search r(198):r(198);}
+
+{com}. do "C:\Users\netbook\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. /*task 1*/
+. graph hbox literacy, over(country)
+{res}{txt}
+{com}. graph hbox yos, over(country)
+{err}{hline 2}Break{hline 2}
+{txt}{search r(1):r(1);}
+
+end of do-file
+
+{err}{hline 2}Break{hline 2}
+{txt}{search r(1):r(1);}
+
+{com}. exit, clear

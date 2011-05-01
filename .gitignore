@@ -1,0 +1,23 @@
+# TeX
+*.aux
+*.log
+*.toc
+*.out
+# With PDFTeX, ignore DVIs
+*.dvi
+# BibTeX
+*.bbl
+*.blg
+# Makeindex
+*.idx
+*.ilg
+*.ind
+# LatexMk
+*.fdb_latexmk
+# Other
+*.zip
+
+
+.DS_Store
+Icon?
+thumbs.db

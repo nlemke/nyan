@@ -1,0 +1,1323 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+       log:  {res}C:\Users\Jana\Uni\Master Infonomics\5 Intellectual Capital and Knowledge Systems\Data sets\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}26 Apr 2011, 09:20:14
+
+{com}. edit
+{txt}- preserve
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. /*task 1*/
+. graph hbox literacy, over(country)
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. reg literacy sex age 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F(  2, 20376) ={res}  245.12
+    {txt}   Model {char |} {res} 1392875.71     2  696437.853           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 57893182.9 20376  2841.24376           {txt}R-squared     = {res} 0.0235
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0234
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res} 53.303
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 11.11268   .7478249    14.86   0.000     9.646888    12.57848
+{txt}         age {c |}  {res}-.5499831   .0339139   -16.22   0.000    -.6164572   -.4835091
+{txt}       _cons {c |}  {res} 292.3444   1.420372   205.82   0.000     289.5604    295.1285
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg literacy sex age i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F( 16, 20362) ={res}  362.20
+    {txt}   Model {char |} {res} 13134929.4    16  820933.088           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 46151129.2 20362  2266.53223           {txt}R-squared     = {res} 0.2216
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2209
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res} 47.608
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 10.04484   .6698208    15.00   0.000     8.731934    11.35774
+{txt}         age {c |}  {res}-.7201406   .0306762   -23.48   0.000    -.7802684   -.6600128
+{txt} _Icountry_6 {c |}  {res} 1.413379   2.102254     0.67   0.501    -2.707207    5.533966
+{txt} _Icountry_8 {c |}  {res} 13.92249   2.070605     6.72   0.000     9.863936    17.98104
+{txt} _Icountry_9 {c |}  {res}-38.91285   2.181129   -17.84   0.000    -43.18804   -34.63766
+{txt}_Icountry_11 {c |}  {res} 28.16249   2.052123    13.72   0.000     24.14017    32.18482
+{txt}_Icountry_17 {c |}  {res} -11.6655   2.242464    -5.20   0.000    -16.06091   -7.270092
+{txt}_Icountry_18 {c |}  {res} 19.73725   1.968023    10.03   0.000     15.87977    23.59474
+{txt}_Icountry_20 {c |}  {res}-43.37241   2.257472   -19.21   0.000    -47.79724   -38.94759
+{txt}_Icountry_21 {c |}  {res}-.2766511   2.125456    -0.13   0.896    -4.442716    3.889414
+{txt}_Icountry_23 {c |}  {res} 3.154547   1.980828     1.59   0.111     -.728035    7.037128
+{txt}_Icountry_24 {c |}  {res} 20.80555   2.087158     9.97   0.000     16.71456    24.89655
+{txt}_Icountry_25 {c |}  {res}-30.34394   2.277052   -13.33   0.000    -34.80715   -25.88074
+{txt}_Icountry_26 {c |}  {res} 7.359358   2.026138     3.63   0.000     3.387964    11.33075
+{txt}_Icountry_27 {c |}  {res}-.9704978   1.994165    -0.49   0.626    -4.879222    2.938226
+{txt}_Icountry_29 {c |}  {res}-60.75153   2.145452   -28.32   0.000    -64.95679   -56.54627
+{txt}       _cons {c |}  {res} 301.8248   2.032454   148.50   0.000      297.841    305.8085
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg literacy i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20388
+{txt}{hline 13}{char +}{hline 30}           F( 14, 20373) ={res}  344.16
+    {txt}   Model {char |} {res} 11347231.3    14  810516.519           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 47979572.9 20373  2355.05683           {txt}R-squared     = {res} 0.1913
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.1907
+    {txt}   Total {char |} {res} 59326804.1 20387   2910.0311           {txt}Root MSE      = {res} 48.529
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+ _Icountry_6 {c |}  {res}-.4795056   2.138341    -0.22   0.823    -4.670826    3.711815
+{txt} _Icountry_8 {c |}  {res} 13.91414   2.110634     6.59   0.000     9.777129    18.05115
+{txt} _Icountry_9 {c |}  {res}-39.85367    2.22238   -17.93   0.000    -44.20972   -35.49763
+{txt}_Icountry_11 {c |}  {res}  25.2714   2.086841    12.11   0.000     21.18102    29.36178
+{txt}_Icountry_17 {c |}  {res}-13.13992   2.285064    -5.75   0.000    -17.61883    -8.66101
+{txt}_Icountry_18 {c |}  {res} 17.52291   2.003508     8.75   0.000     13.59587    21.44994
+{txt}_Icountry_20 {c |}  {res}-42.49156   2.300879   -18.47   0.000    -47.00147   -37.98166
+{txt}_Icountry_21 {c |}  {res}-2.015837   2.162799    -0.93   0.351    -6.255097    2.223424
+{txt}_Icountry_23 {c |}  {res} .8294885   2.016804     0.41   0.681    -3.123609    4.782586
+{txt}_Icountry_24 {c |}  {res} 19.59578   2.126319     9.22   0.000     15.42802    23.76354
+{txt}_Icountry_25 {c |}  {res}-30.12206   2.320536   -12.98   0.000     -34.6705   -25.57362
+{txt}_Icountry_26 {c |}  {res} 8.416142   2.064942     4.08   0.000     4.368689    12.46359
+{txt}_Icountry_27 {c |}  {res}-2.187964   2.031785    -1.08   0.282    -6.170426    1.794497
+{txt}_Icountry_29 {c |}  {res}-61.26352   2.185986   -28.03   0.000    -65.54823   -56.97881
+{txt}       _cons {c |}  {res} 279.6729   1.682438   166.23   0.000     276.3752    282.9706
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. gen sqage =  age *  age
+{txt}(9 missing values generated)
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. reg literacy sex age sqage 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F(  3, 20375) ={res}  177.62
+    {txt}   Model {char |} {res} 1510958.27     3  503652.758           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 57775100.4 20375  2835.58775           {txt}R-squared     = {res} 0.0255
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0253
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res}  53.25
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 10.95263   .7474917    14.65   0.000     9.487491    12.41778
+{txt}         age {c |}  {res} .8181285   .2146971     3.81   0.000      .397305    1.238952
+{txt}       sqage {c |}  {res} -.017151   .0026578    -6.45   0.000    -.0223605   -.0119416
+{txt}       _cons {c |}  {res} 267.2335   4.141914    64.52   0.000      259.115     275.352
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. gen lnage = ln(age)
+{txt}(9 missing values generated)
+
+{com}. gen lnhours = ln(hours)
+{txt}(164 missing values generated)
+
+{com}. gen lnyos = ln(yos)
+{txt}(85 missing values generated)
+
+{com}. gen lnliteracy = ln(literacy)
+{txt}(2 missing values generated)
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. reg literacy sex age sqage 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F(  3, 20375) ={res}  177.62
+    {txt}   Model {char |} {res} 1510958.27     3  503652.758           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 57775100.4 20375  2835.58775           {txt}R-squared     = {res} 0.0255
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0253
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res}  53.25
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 10.95263   .7474917    14.65   0.000     9.487491    12.41778
+{txt}         age {c |}  {res} .8181285   .2146971     3.81   0.000      .397305    1.238952
+{txt}       sqage {c |}  {res} -.017151   .0026578    -6.45   0.000    -.0223605   -.0119416
+{txt}       _cons {c |}  {res} 267.2335   4.141914    64.52   0.000      259.115     275.352
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. reg yos sex age sqage 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20335
+{txt}{hline 13}{char +}{hline 30}           F(  3, 20331) ={res}  114.59
+    {txt}   Model {char |} {res} 4174.46971     3   1391.4899           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 246891.806 20331  12.1436135           {txt}R-squared     = {res} 0.0166
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0165
+    {txt}   Total {char |} {res} 251066.276 20334  12.3471169           {txt}Root MSE      = {res} 3.4848
+
+{txt}{hline 13}{c TT}{hline 64}
+         yos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .1751909   .0489701     3.58   0.000     .0792055    .2711763
+{txt}         age {c |}  {res} .1881626   .0140675    13.38   0.000     .1605891    .2157361
+{txt}       sqage {c |}  {res}-.0026332   .0001741   -15.12   0.000    -.0029746   -.0022919
+{txt}       _cons {c |}  {res} 9.522135   .2714095    35.08   0.000      8.99015    10.05412
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. reg educ sex age sqage 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18584
+{txt}{hline 13}{char +}{hline 30}           F(  3, 18580) ={res}   56.00
+    {txt}   Model {char |} {res} 504.386567     3  168.128856           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}  55784.523 18580  3.00239629           {txt}R-squared     = {res} 0.0090
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0088
+    {txt}   Total {char |} {res} 56288.9095 18583  3.02905395           {txt}Root MSE      = {res} 1.7327
+
+{txt}{hline 13}{c TT}{hline 64}
+        educ {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0984684   .0254709     3.87   0.000     .0485431    .1483937
+{txt}         age {c |}  {res} .0941775   .0077844    12.10   0.000     .0789193    .1094357
+{txt}       sqage {c |}  {res}-.0011236   .0000963   -11.66   0.000    -.0013124   -.0009347
+{txt}       _cons {c |}  {res} 1.640585   .1501526    10.93   0.000     1.346272    1.934898
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg literacy sex age i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F( 16, 20362) ={res}  362.20
+    {txt}   Model {char |} {res} 13134929.4    16  820933.088           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 46151129.2 20362  2266.53223           {txt}R-squared     = {res} 0.2216
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2209
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res} 47.608
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 10.04484   .6698208    15.00   0.000     8.731934    11.35774
+{txt}         age {c |}  {res}-.7201406   .0306762   -23.48   0.000    -.7802684   -.6600128
+{txt} _Icountry_6 {c |}  {res} 1.413379   2.102254     0.67   0.501    -2.707207    5.533966
+{txt} _Icountry_8 {c |}  {res} 13.92249   2.070605     6.72   0.000     9.863936    17.98104
+{txt} _Icountry_9 {c |}  {res}-38.91285   2.181129   -17.84   0.000    -43.18804   -34.63766
+{txt}_Icountry_11 {c |}  {res} 28.16249   2.052123    13.72   0.000     24.14017    32.18482
+{txt}_Icountry_17 {c |}  {res} -11.6655   2.242464    -5.20   0.000    -16.06091   -7.270092
+{txt}_Icountry_18 {c |}  {res} 19.73725   1.968023    10.03   0.000     15.87977    23.59474
+{txt}_Icountry_20 {c |}  {res}-43.37241   2.257472   -19.21   0.000    -47.79724   -38.94759
+{txt}_Icountry_21 {c |}  {res}-.2766511   2.125456    -0.13   0.896    -4.442716    3.889414
+{txt}_Icountry_23 {c |}  {res} 3.154547   1.980828     1.59   0.111     -.728035    7.037128
+{txt}_Icountry_24 {c |}  {res} 20.80555   2.087158     9.97   0.000     16.71456    24.89655
+{txt}_Icountry_25 {c |}  {res}-30.34394   2.277052   -13.33   0.000    -34.80715   -25.88074
+{txt}_Icountry_26 {c |}  {res} 7.359358   2.026138     3.63   0.000     3.387964    11.33075
+{txt}_Icountry_27 {c |}  {res}-.9704978   1.994165    -0.49   0.626    -4.879222    2.938226
+{txt}_Icountry_29 {c |}  {res}-60.75153   2.145452   -28.32   0.000    -64.95679   -56.54627
+{txt}       _cons {c |}  {res} 301.8248   2.032454   148.50   0.000      297.841    305.8085
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg yos sex age i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20335
+{txt}{hline 13}{char +}{hline 30}           F( 16, 20318) ={res}  110.28
+    {txt}   Model {char |} {res}  20061.442    16  1253.84013           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 231004.834 20318  11.3694672           {txt}R-squared     = {res} 0.0799
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0792
+    {txt}   Total {char |} {res} 251066.276 20334  12.3471169           {txt}Root MSE      = {res} 3.3719
+
+{txt}{hline 13}{c TT}{hline 64}
+         yos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .1420307   .0474925     2.99   0.003     .0489416    .2351198
+{txt}         age {c |}  {res}-.0267332   .0021752   -12.29   0.000    -.0309967   -.0224697
+{txt} _Icountry_6 {c |}  {res} 2.248402   .1493853    15.05   0.000     1.955595     2.54121
+{txt} _Icountry_8 {c |}  {res} 1.931661   .1469327    13.15   0.000     1.643661    2.219661
+{txt} _Icountry_9 {c |}  {res} .3113098   .1548369     2.01   0.044     .0078169    .6148027
+{txt}_Icountry_11 {c |}  {res} .4258637   .1456793     2.92   0.003     .1403205    .7114069
+{txt}_Icountry_17 {c |}  {res} .9326403   .1590839     5.86   0.000     .6208231    1.244458
+{txt}_Icountry_18 {c |}  {res} 1.270411   .1397259     9.09   0.000     .9965368    1.544285
+{txt}_Icountry_20 {c |}  {res}-.1963319   .1601449    -1.23   0.220    -.5102288     .117565
+{txt}_Icountry_21 {c |}  {res} 1.630747   .1508576    10.81   0.000     1.335054     1.92644
+{txt}_Icountry_23 {c |}  {res} 1.859111   .1405998    13.22   0.000     1.583524    2.134697
+{txt}_Icountry_24 {c |}  {res} 1.715481   .1481043    11.58   0.000     1.425185    2.005778
+{txt}_Icountry_25 {c |}  {res} .7578053   .1617806     4.68   0.000     .4407023    1.074908
+{txt}_Icountry_26 {c |}  {res} 1.385276   .1438188     9.63   0.000     1.103379    1.667173
+{txt}_Icountry_27 {c |}  {res} 1.544248   .1416295    10.90   0.000     1.266643    1.821853
+{txt}_Icountry_29 {c |}  {res} -1.67747    .152223   -11.02   0.000     -1.97584   -1.379101
+{txt}       _cons {c |}  {res} 12.52189    .144268    86.80   0.000     12.23911    12.80466
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg educ sex age i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18584
+{txt}{hline 13}{char +}{hline 30}           F( 15, 18568) ={res}   88.96
+    {txt}   Model {char |} {res}  3773.9318    15  251.595453           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 52514.9777 18568  2.82825171           {txt}R-squared     = {res} 0.0670
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0663
+    {txt}   Total {char |} {res} 56288.9095 18583  3.02905395           {txt}Root MSE      = {res} 1.6817
+
+{txt}{hline 13}{c TT}{hline 64}
+        educ {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .1001591   .0247842     4.04   0.000     .0515798    .1487385
+{txt}         age {c |}  {res} .0012358   .0011472     1.08   0.281    -.0010128    .0034843
+{txt} _Icountry_6 {c |}  {res} 1.230686   .0767825    16.03   0.000     1.080186    1.381187
+{txt} _Icountry_8 {c |}  {res}  .684803   .0756752     9.05   0.000     .5364726    .8331333
+{txt} _Icountry_9 {c |}  {res} .0046707   .0794572     0.06   0.953    -.1510727     .160414
+{txt}_Icountry_11 {c |}  {res} .6572482   .0751393     8.75   0.000     .5099684     .804528
+{txt}_Icountry_17 {c |}  {res}   .33568    .081561     4.12   0.000      .175813     .495547
+{txt}_Icountry_18 {c |}  {res} 1.403884   .0722087    19.44   0.000     1.262349     1.54542
+{txt}_Icountry_20 {c |}  {res} .1634883    .082072     1.99   0.046     .0026196     .324357
+{txt}_Icountry_21 {c |}  {res} .3200514   .0775611     4.13   0.000     .1680246    .4720783
+{txt}_Icountry_23 {c |}  {res} .8416296   .0726439    11.59   0.000     .6992409    .9840182
+{txt}_Icountry_24 {c |}  {res} .6711527   .0762438     8.80   0.000     .5217078    .8205975
+{txt}_Icountry_25 {c |}  {res} .5080975   .0827445     6.14   0.000     .3459107    .6702842
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res} .8724527   .0733656    11.89   0.000     .7286495    1.016256
+{txt}_Icountry_29 {c |}  {res}-.1126638   .0782393    -1.44   0.150    -.2660201    .0406925
+{txt}       _cons {c |}  {res} 2.791522   .0757758    36.84   0.000     2.642994    2.940049
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg literacy sex age sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20361) ={res}  349.17
+    {txt}   Model {char |} {res} 13382454.3    17  787203.193           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 45903604.4 20361  2254.48673           {txt}R-squared     = {res} 0.2257
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2251
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res} 47.481
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 9.823932   .6683711    14.70   0.000     8.513871    11.13399
+{txt}         age {c |}  {res} 1.277925   .1931271     6.62   0.000     .8993804     1.65647
+{txt}       sqage {c |}  {res}-.0250393   .0023897   -10.48   0.000    -.0297233   -.0203554
+{txt} _Icountry_6 {c |}  {res} 1.232878   2.096731     0.59   0.557    -2.876883    5.342639
+{txt} _Icountry_8 {c |}  {res} 13.30319   2.065941     6.44   0.000     9.253778     17.3526
+{txt} _Icountry_9 {c |}  {res}-40.03387   2.177955   -18.38   0.000    -44.30284    -35.7649
+{txt}_Icountry_11 {c |}  {res} 28.27445    2.04669    13.81   0.000     24.26277    32.28613
+{txt}_Icountry_17 {c |}  {res}-12.77609   2.239007    -5.71   0.000    -17.16472   -8.387453
+{txt}_Icountry_18 {c |}  {res} 19.69094   1.962792    10.03   0.000     15.84371    23.53817
+{txt}_Icountry_20 {c |}  {res}-44.27158     2.2531   -19.65   0.000    -48.68783   -39.85532
+{txt}_Icountry_21 {c |}  {res}-.9193158   2.120688    -0.43   0.665    -5.076035    3.237403
+{txt}_Icountry_23 {c |}  {res} 2.762382   1.975912     1.40   0.162    -1.110564    6.635328
+{txt}_Icountry_24 {c |}  {res} 20.11538   2.082646     9.66   0.000     16.03322    24.19753
+{txt}_Icountry_25 {c |}  {res} -30.7609   2.271342   -13.54   0.000    -35.21291   -26.30889
+{txt}_Icountry_26 {c |}  {res} 7.935853   2.021496     3.93   0.000     3.973558    11.89815
+{txt}_Icountry_27 {c |}  {res}-1.076364   1.988885    -0.54   0.588    -4.974738     2.82201
+{txt}_Icountry_29 {c |}  {res}-60.81141   2.139751   -28.42   0.000     -65.0055   -56.61733
+{txt}       _cons {c |}  {res} 265.4493   4.020015    66.03   0.000     257.5698    273.3289
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg yos sex age sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20335
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20317) ={res}  119.70
+    {txt}   Model {char |} {res} 22856.2093    17   1344.4829           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 228210.066 20317  11.2324687           {txt}R-squared     = {res} 0.0910
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0903
+    {txt}   Total {char |} {res} 251066.276 20334  12.3471169           {txt}Root MSE      = {res} 3.3515
+
+{txt}{hline 13}{c TT}{hline 64}
+         yos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .1186016   .0472288     2.51   0.012     .0260293     .211174
+{txt}         age {c |}  {res} .1858476   .0136492    13.62   0.000     .1590941    .2126011
+{txt}       sqage {c |}  {res}-.0026638   .0001689   -15.77   0.000    -.0029948   -.0023328
+{txt} _Icountry_6 {c |}  {res} 2.227739   .1484884    15.00   0.000      1.93669    2.518788
+{txt} _Icountry_8 {c |}  {res} 1.864034   .1461077    12.76   0.000     1.577651    2.150417
+{txt} _Icountry_9 {c |}  {res} .1898501   .1540937     1.23   0.218    -.1121861    .4918863
+{txt}_Icountry_11 {c |}  {res} .4357267   .1448003     3.01   0.003     .1519064     .719547
+{txt}_Icountry_17 {c |}  {res} .8127097   .1583052     5.13   0.000     .5024187    1.123001
+{txt}_Icountry_18 {c |}  {res} 1.263796   .1388821     9.10   0.000     .9915758    1.536016
+{txt}_Icountry_20 {c |}  {res}-.2937267   .1592968    -1.84   0.065    -.6059614    .0185079
+{txt}_Icountry_21 {c |}  {res} 1.560257   .1500125    10.40   0.000     1.266221    1.854294
+{txt}_Icountry_23 {c |}  {res} 1.815734   .1397772    12.99   0.000      1.54176    2.089709
+{txt}_Icountry_24 {c |}  {res} 1.640268   .1472865    11.14   0.000     1.351574    1.928961
+{txt}_Icountry_25 {c |}  {res} .7120763   .1608291     4.43   0.000     .3968383    1.027314
+{txt}_Icountry_26 {c |}  {res} 1.444583   .1429992    10.10   0.000     1.164294    1.724873
+{txt}_Icountry_27 {c |}  {res} 1.530441   .1407763    10.87   0.000     1.254508    1.806374
+{txt}_Icountry_29 {c |}  {res}-1.685572   .1513039   -11.14   0.000     -1.98214   -1.389004
+{txt}       _cons {c |}  {res} 8.653149   .2841074    30.46   0.000     8.096275    9.210022
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg educ sex age sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18584
+{txt}{hline 13}{char +}{hline 30}           F( 16, 18567) ={res}   96.52
+    {txt}   Model {char |} {res} 4322.25552    16   270.14097           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}  51966.654 18567  2.79887187           {txt}R-squared     = {res} 0.0768
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0760
+    {txt}   Total {char |} {res} 56288.9095 18583  3.02905395           {txt}Root MSE      = {res}  1.673
+
+{txt}{hline 13}{c TT}{hline 64}
+        educ {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0894189   .0246671     3.63   0.000     .0410691    .1377687
+{txt}         age {c |}  {res} .1058419   .0075602    14.00   0.000     .0910232    .1206607
+{txt}       sqage {c |}  {res}-.0013102   .0000936   -14.00   0.000    -.0014937   -.0011268
+{txt} _Icountry_6 {c |}  {res} 1.224986   .0763837    16.04   0.000     1.075267    1.374705
+{txt} _Icountry_8 {c |}  {res} .6565142   .0753082     8.72   0.000     .5089031    .8041252
+{txt} _Icountry_9 {c |}  {res}-.0500187   .0791399    -0.63   0.527    -.2051401    .1051028
+{txt}_Icountry_11 {c |}  {res} .6659155   .0747505     8.91   0.000     .5193977    .8124334
+{txt}_Icountry_17 {c |}  {res} .2815765   .0812283     3.47   0.001     .1223617    .4407914
+{txt}_Icountry_18 {c |}  {res} 1.405441   .0718327    19.57   0.000     1.264642    1.546239
+{txt}_Icountry_20 {c |}  {res} .1205384   .0817023     1.48   0.140    -.0396056    .2806823
+{txt}_Icountry_21 {c |}  {res} .2902642   .0771865     3.76   0.000     .1389716    .4415569
+{txt}_Icountry_23 {c |}  {res} .8246938   .0722757    11.41   0.000     .6830268    .9663608
+{txt}_Icountry_24 {c |}  {res} .6389971   .0758815     8.42   0.000     .4902623    .7877319
+{txt}_Icountry_25 {c |}  {res} .4902902   .0823234     5.96   0.000     .3289288    .6516516
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res} .8694078   .0729838    11.91   0.000     .7263527    1.012463
+{txt}_Icountry_29 {c |}  {res}-.1115934   .0778319    -1.43   0.152    -.2641512    .0409643
+{txt}       _cons {c |}  {res} .8816645   .1558876     5.66   0.000     .5761104    1.187219
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg lnliteracy sex age sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20377
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20359) ={res}  318.00
+    {txt}   Model {char |} {res} 229.289866    17  13.4876392           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 863.500701 20359  .042413709           {txt}R-squared     = {res} 0.2098
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2092
+    {txt}   Total {char |} {res} 1092.79057 20376  .053631261           {txt}Root MSE      = {res} .20595
+
+{txt}{hline 13}{c TT}{hline 64}
+  lnliteracy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0413128   .0028991    14.25   0.000     .0356303    .0469953
+{txt}         age {c |}  {res} .0048948   .0008377     5.84   0.000     .0032529    .0065368
+{txt}       sqage {c |}  {res}-.0000984   .0000104    -9.50   0.000    -.0001187   -.0000781
+{txt} _Icountry_6 {c |}  {res}-.0192876   .0090944    -2.12   0.034    -.0371133   -.0014619
+{txt} _Icountry_8 {c |}  {res} .0508917   .0089608     5.68   0.000     .0333278    .0684556
+{txt} _Icountry_9 {c |}  {res}-.1715316   .0094467   -18.16   0.000    -.1900478   -.1530154
+{txt}_Icountry_11 {c |}  {res} .0997168   .0088773    11.23   0.000     .0823166    .1171171
+{txt}_Icountry_17 {c |}  {res}-.0560054   .0097115    -5.77   0.000    -.0750407   -.0369701
+{txt}_Icountry_18 {c |}  {res} .0745225   .0085134     8.75   0.000     .0578355    .0912095
+{txt}_Icountry_20 {c |}  {res}-.1897763   .0097726   -19.42   0.000    -.2089314   -.1706213
+{txt}_Icountry_21 {c |}  {res} .0019389   .0091996     0.21   0.833    -.0160931    .0199709
+{txt}_Icountry_23 {c |}  {res} .0183569   .0085703     2.14   0.032     .0015584    .0351554
+{txt}_Icountry_24 {c |}  {res} .0752214   .0090333     8.33   0.000     .0575154    .0929273
+{txt}_Icountry_25 {c |}  {res} -.115853   .0098517   -11.76   0.000    -.1351631   -.0965428
+{txt}_Icountry_26 {c |}  {res} .0225365    .008768     2.57   0.010     .0053505    .0397226
+{txt}_Icountry_27 {c |}  {res}-.0054036   .0086273    -0.63   0.531    -.0223138    .0115067
+{txt}_Icountry_29 {c |}  {res}-.2696413    .009281   -29.05   0.000    -.2878327   -.2514499
+{txt}       _cons {c |}  {res} 5.565547   .0174367   319.19   0.000      5.53137    5.599724
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg lnyos sex age sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20294
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20276) ={res}  145.70
+    {txt}   Model {char |} {res} 216.772687    17  12.7513345           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 1774.55366 20276  .087519908           {txt}R-squared     = {res} 0.1089
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.1081
+    {txt}   Total {char |} {res} 1991.32635 20293  .098128732           {txt}Root MSE      = {res} .29584
+
+{txt}{hline 13}{c TT}{hline 64}
+       lnyos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0180764   .0041723     4.33   0.000     .0098983    .0262546
+{txt}         age {c |}  {res} .0147368   .0012062    12.22   0.000     .0123725     .017101
+{txt}       sqage {c |}  {res}-.0002266   .0000149   -15.18   0.000    -.0002558   -.0001973
+{txt} _Icountry_6 {c |}  {res} .1794554   .0131072    13.69   0.000     .1537642    .2051465
+{txt} _Icountry_8 {c |}  {res}   .14381   .0129131    11.14   0.000     .1184992    .1691207
+{txt} _Icountry_9 {c |}  {res} .0198732    .013602     1.46   0.144    -.0067878    .0465341
+{txt}_Icountry_11 {c |}  {res} .0260422   .0127873     2.04   0.042      .000978    .0511064
+{txt}_Icountry_17 {c |}  {res} .0533332   .0139769     3.82   0.000     .0259373    .0807291
+{txt}_Icountry_18 {c |}  {res} .1112508   .0122593     9.07   0.000     .0872217      .13528
+{txt}_Icountry_20 {c |}  {res}-.0244269   .0140613    -1.74   0.082    -.0519881    .0031343
+{txt}_Icountry_21 {c |}  {res} .1431705   .0132417    10.81   0.000     .1172157    .1691254
+{txt}_Icountry_23 {c |}  {res} .1547292   .0123392    12.54   0.000     .1305434     .178915
+{txt}_Icountry_24 {c |}  {res} .1319117   .0130011    10.15   0.000     .1064285    .1573948
+{txt}_Icountry_25 {c |}  {res} .0623138   .0141965     4.39   0.000     .0344875      .09014
+{txt}_Icountry_26 {c |}  {res} .1202875   .0126226     9.53   0.000     .0955462    .1450289
+{txt}_Icountry_27 {c |}  {res} .1230922   .0124275     9.90   0.000     .0987333    .1474511
+{txt}_Icountry_29 {c |}  {res}-.2145529   .0134107   -16.00   0.000    -.2408389    -.188267
+{txt}       _cons {c |}  {res}  2.20166   .0250968    87.73   0.000     2.152468    2.250852
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg lnliteracy sex lnage sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20377
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20359) ={res}  318.48
+    {txt}   Model {char |} {res} 229.564005    17   13.503765           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 863.226561 20359  .042400244           {txt}R-squared     = {res} 0.2101
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2094
+    {txt}   Total {char |} {res} 1092.79057 20376  .053631261           {txt}Root MSE      = {res} .20591
+
+{txt}{hline 13}{c TT}{hline 64}
+  lnliteracy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0412945   .0028986    14.25   0.000     .0356131    .0469759
+{txt}       lnage {c |}  {res} .0980645   .0153865     6.37   0.000     .0679057    .1282233
+{txt}       sqage {c |}  {res}-.0000698   5.16e-06   -13.53   0.000    -.0000799   -.0000597
+{txt} _Icountry_6 {c |}  {res} -.019544   .0090934    -2.15   0.032    -.0373678   -.0017202
+{txt} _Icountry_8 {c |}  {res} .0505893   .0089602     5.65   0.000     .0330266    .0681519
+{txt} _Icountry_9 {c |}  {res}-.1718837   .0094459   -18.20   0.000    -.1903984    -.153369
+{txt}_Icountry_11 {c |}  {res} .0995962    .008876    11.22   0.000     .0821985    .1169939
+{txt}_Icountry_17 {c |}  {res}-.0564086   .0097111    -5.81   0.000    -.0754431   -.0373741
+{txt}_Icountry_18 {c |}  {res}  .074426   .0085121     8.74   0.000     .0577416    .0911105
+{txt}_Icountry_20 {c |}  {res} -.190115   .0097719   -19.46   0.000    -.2092688   -.1709613
+{txt}_Icountry_21 {c |}  {res}  .001829   .0091978     0.20   0.842    -.0161994    .0198573
+{txt}_Icountry_23 {c |}  {res} .0181629   .0085693     2.12   0.034     .0013664    .0349594
+{txt}_Icountry_24 {c |}  {res} .0750166    .009032     8.31   0.000     .0573131      .09272
+{txt}_Icountry_25 {c |}  {res}-.1158807     .00985   -11.76   0.000    -.1351873    -.096574
+{txt}_Icountry_26 {c |}  {res} .0226321   .0087664     2.58   0.010     .0054492    .0398151
+{txt}_Icountry_27 {c |}  {res}-.0057517   .0086265    -0.67   0.505    -.0226605     .011157
+{txt}_Icountry_29 {c |}  {res}-.2697835   .0092795   -29.07   0.000    -.2879721   -.2515948
+{txt}       _cons {c |}  {res} 5.354513   .0480799   111.37   0.000     5.260273    5.448754
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg lnyos sex lnage sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20294
+{txt}{hline 13}{char +}{hline 30}           F( 17, 20276) ={res}  147.89
+    {txt}   Model {char |} {res} 219.681081    17  12.9224165           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 1771.64527 20276  .087376468           {txt}R-squared     = {res} 0.1103
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.1096
+    {txt}   Total {char |} {res} 1991.32635 20293  .098128732           {txt}Root MSE      = {res}  .2956
+
+{txt}{hline 13}{c TT}{hline 64}
+       lnyos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0180016   .0041688     4.32   0.000     .0098305    .0261727
+{txt}       lnage {c |}  {res} .2993333   .0221397    13.52   0.000     .2559376    .3427289
+{txt}       sqage {c |}  {res}-.0001416   7.43e-06   -19.07   0.000    -.0001562   -.0001271
+{txt} _Icountry_6 {c |}  {res} .1786266   .0130971    13.64   0.000     .1529552    .2042981
+{txt} _Icountry_8 {c |}  {res} .1428223   .0129037    11.07   0.000     .1175301    .1681145
+{txt} _Icountry_9 {c |}  {res} .0186607   .0135919     1.37   0.170    -.0079806    .0453019
+{txt}_Icountry_11 {c |}  {res}  .025633    .012777     2.01   0.045     .0005891     .050677
+{txt}_Icountry_17 {c |}  {res} .0519691   .0139671     3.72   0.000     .0245923    .0793458
+{txt}_Icountry_18 {c |}  {res}  .110922   .0122493     9.06   0.000     .0869123    .1349317
+{txt}_Icountry_20 {c |}  {res}-.0255633   .0140511    -1.82   0.069    -.0531045    .0019779
+{txt}_Icountry_21 {c |}  {res} .1427348   .0132303    10.79   0.000     .1168023    .1686672
+{txt}_Icountry_23 {c |}  {res} .1540674   .0123295    12.50   0.000     .1299005    .1782343
+{txt}_Icountry_24 {c |}  {res} .1311907   .0129907    10.10   0.000     .1057279    .1566535
+{txt}_Icountry_25 {c |}  {res} .0621617   .0141846     4.38   0.000     .0343588    .0899646
+{txt}_Icountry_26 {c |}  {res} .1206191    .012612     9.56   0.000     .0958986    .1453396
+{txt}_Icountry_27 {c |}  {res} .1219865   .0124182     9.82   0.000     .0976457    .1463272
+{txt}_Icountry_29 {c |}  {res}-.2150221   .0133998   -16.05   0.000    -.2412868   -.1887574
+{txt}       _cons {c |}  {res} 1.553698   .0691691    22.46   0.000      1.41812    1.689275
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi: reg educ sex lnage sqage i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18584
+{txt}{hline 13}{char +}{hline 30}           F( 16, 18567) ={res}   98.82
+    {txt}   Model {char |} {res} 4417.15331    16  276.072082           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 51871.7562 18567  2.79376077           {txt}R-squared     = {res} 0.0785
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0777
+    {txt}   Total {char |} {res} 56288.9095 18583  3.02905395           {txt}Root MSE      = {res} 1.6715
+
+{txt}{hline 13}{c TT}{hline 64}
+        educ {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} .0893684   .0246432     3.63   0.000     .0410655    .1376714
+{txt}       lnage {c |}  {res} 2.092006   .1378465    15.18   0.000     1.821814    2.362198
+{txt}       sqage {c |}  {res}-.0006795    .000046   -14.76   0.000    -.0007697   -.0005893
+{txt} _Icountry_6 {c |}  {res} 1.219669   .0763177    15.98   0.000     1.070079    1.369259
+{txt} _Icountry_8 {c |}  {res} .6510523   .0752452     8.65   0.000     .5035648    .7985398
+{txt} _Icountry_9 {c |}  {res}-.0564809   .0790732    -0.71   0.475    -.2114717    .0985099
+{txt}_Icountry_11 {c |}  {res} .6629719   .0746829     8.88   0.000     .5165866    .8093571
+{txt}_Icountry_17 {c |}  {res} .2740204   .0811635     3.38   0.001     .1149326    .4331082
+{txt}_Icountry_18 {c |}  {res} 1.403373   .0717678    19.55   0.000     1.262701    1.544044
+{txt}_Icountry_20 {c |}  {res}    .1146   .0816338     1.40   0.160    -.0454098    .2746097
+{txt}_Icountry_21 {c |}  {res} .2883078   .0771132     3.74   0.000     .1371588    .4394567
+{txt}_Icountry_23 {c |}  {res} .8208224   .0722127    11.37   0.000     .6792788    .9623659
+{txt}_Icountry_24 {c |}  {res} .6352881   .0758137     8.38   0.000     .4866863    .7838898
+{txt}_Icountry_25 {c |}  {res} .4903861   .0822464     5.96   0.000     .3291756    .6515966
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res} .8618876    .072922    11.82   0.000     .7189538    1.004821
+{txt}_Icountry_29 {c |}  {res}-.1139988   .0777606    -1.47   0.143    -.2664168    .0384192
+{txt}       _cons {c |}  {res}-3.598117   .4305927    -8.36   0.000    -4.442118   -2.754116
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg i.educ sex lnage sqage i.country
+{txt}i.educ{col 19}_Ieduc_0-10{col 39}(naturally coded; _Ieduc_0 omitted)
+i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18584
+{txt}{hline 13}{char +}{hline 30}           F( 23, 18560) ={res} 4191.32
+    {txt}   Model {char |} {res} 838.909552    23  36.4743283           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 161.515706 18560  .008702355           {txt}R-squared     = {res} 0.8386
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.8384
+    {txt}   Total {char |} {res} 1000.42526 18583  .053835509           {txt}Root MSE      = {res} .09329
+
+{txt}{hline 13}{c TT}{hline 64}
+    _Ieduc_1 {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+    _Ieduc_2 {c |}  {res} -.849266   .0031467  -269.89   0.000    -.8554339   -.8430981
+{txt}    _Ieduc_3 {c |}  {res}-.8556264   .0029793  -287.19   0.000    -.8614662   -.8497867
+{txt}    _Ieduc_5 {c |}  {res}-.8541279   .0035242  -242.36   0.000    -.8610357   -.8472201
+{txt}    _Ieduc_6 {c |}  {res}-.8534571   .0033428  -255.31   0.000    -.8600093   -.8469049
+{txt}    _Ieduc_7 {c |}  {res}-.8574288   .0041522  -206.50   0.000    -.8655674   -.8492901
+{txt}    _Ieduc_9 {c |}  {res}-.8620841   .0099217   -86.89   0.000    -.8815316   -.8426366
+{txt}   _Ieduc_10 {c |}  {res}-.7811659   .0156204   -50.01   0.000    -.8117834   -.7505484
+{txt}         sex {c |}  {res} .0038203   .0013807     2.77   0.006     .0011139    .0065266
+{txt}       lnage {c |}  {res}-.0149592   .0077495    -1.93   0.054    -.0301489    .0002306
+{txt}       sqage {c |}  {res} 2.58e-06   2.59e-06     0.99   0.320    -2.50e-06    7.66e-06
+{txt} _Icountry_6 {c |}  {res} .0159152   .0043757     3.64   0.000     .0073384     .024492
+{txt} _Icountry_8 {c |}  {res} .0017815   .0042492     0.42   0.675    -.0065473    .0101103
+{txt} _Icountry_9 {c |}  {res} .0187618   .0044509     4.22   0.000     .0100376     .027486
+{txt}_Icountry_11 {c |}  {res} .0178754   .0042785     4.18   0.000     .0094891    .0262618
+{txt}_Icountry_17 {c |}  {res} .0090097   .0045789     1.97   0.049     .0000346    .0179848
+{txt}_Icountry_18 {c |}  {res} .0031168   .0041223     0.76   0.450    -.0049633     .011197
+{txt}_Icountry_20 {c |}  {res} .0060786   .0046053     1.32   0.187    -.0029483    .0151054
+{txt}_Icountry_21 {c |}  {res} .0082908   .0043607     1.90   0.057    -.0002566    .0168383
+{txt}_Icountry_23 {c |}  {res} .0121762   .0041282     2.95   0.003     .0040846    .0202678
+{txt}_Icountry_24 {c |}  {res} .0041911   .0043081     0.97   0.331    -.0042532    .0126353
+{txt}_Icountry_25 {c |}  {res}   -.0016   .0046623    -0.34   0.731    -.0107385    .0075385
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res} .0076785    .004203     1.83   0.068    -.0005597    .0159167
+{txt}_Icountry_29 {c |}  {res}-.1078233   .0044429   -24.27   0.000    -.1165318   -.0991148
+{txt}       _cons {c |}  {res} .8997537   .0242692    37.07   0.000     .8521839    .9473235
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. correlate literacy   yos
+{txt}(obs=20344)
+
+             {c |} literacy      yos
+{hline 13}{c +}{hline 18}
+    literacy {c |}{res}   1.0000
+         {txt}yos {c |}{res}   0.5064   1.0000
+
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. twoway (line literacy yos)
+{res}
+{com}. twoway (lfit literacy yos)
+{res}
+{com}. line  literacy  yos
+{res}
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. xi: reg literacy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   20344
+{txt}{hline 13}{char +}{hline 30}           F( 15, 20328) ={res}  858.54
+    {txt}   Model {char |} {res} 22957574.6    15  1530504.97           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 36238221.5 20328   1782.6752           {txt}R-squared     = {res} 0.3878
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.3874
+    {txt}   Total {char |} {res} 59195796.1 20343  2909.88527           {txt}Root MSE      = {res} 42.222
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         yos {c |}  {res} 7.061281   .0874764    80.72   0.000      6.88982    7.232741
+{txt} _Icountry_6 {c |}  {res}-16.03163   1.876299    -8.54   0.000    -19.70932   -12.35393
+{txt} _Icountry_8 {c |}  {res}  .146106   1.847604     0.08   0.937    -3.475348     3.76756
+{txt} _Icountry_9 {c |}  {res} -41.7827   1.938139   -21.56   0.000    -45.58161   -37.98379
+{txt}_Icountry_11 {c |}  {res} 23.03663   1.820002    12.66   0.000     19.46928    26.60398
+{txt}_Icountry_17 {c |}  {res}-19.46908   1.992824    -9.77   0.000    -23.37517   -15.56298
+{txt}_Icountry_18 {c |}  {res}  9.06475   1.750418     5.18   0.000     5.633789    12.49571
+{txt}_Icountry_20 {c |}  {res}-41.38089    2.00513   -20.64   0.000     -45.3111   -37.45067
+{txt}_Icountry_21 {c |}  {res}-13.05336   1.890576    -6.90   0.000    -16.75905   -9.347683
+{txt}_Icountry_23 {c |}  {res}-11.80614   1.765351    -6.69   0.000    -15.26637   -8.345911
+{txt}_Icountry_24 {c |}  {res} 7.743506   1.859162     4.17   0.000     4.099399    11.38761
+{txt}_Icountry_25 {c |}  {res}-35.60012   2.026342   -17.57   0.000    -39.57192   -31.62833
+{txt}_Icountry_26 {c |}  {res}-1.700631   1.804817    -0.94   0.346    -5.238218    1.836956
+{txt}_Icountry_27 {c |}  {res}-12.82702   1.777419    -7.22   0.000    -16.31091   -9.343138
+{txt}_Icountry_29 {c |}  {res}-49.54406   1.910911   -25.93   0.000     -53.2896   -45.79852
+{txt}       _cons {c |}  {res} 197.9189   1.784417   110.92   0.000     194.4213    201.4165
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. reg literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20344
+{txt}{hline 13}{char +}{hline 30}           F(  1, 20342) ={res} 7017.16
+    {txt}   Model {char |} {res} 15182723.1     1  15182723.1           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}   44013073 20342  2163.65515           {txt}R-squared     = {res} 0.2565
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2564
+    {txt}   Total {char |} {res} 59195796.1 20343  2909.88527           {txt}Root MSE      = {res} 46.515
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         yos {c |}  {res}  7.77383   .0928013    83.77   0.000     7.591932    7.955728
+{txt}       _cons {c |}  {res} 178.1191   1.215898   146.49   0.000     175.7358    180.5023
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. reg yosliteracy
+{err}variable yosliteracy not found
+{txt}{search r(111):r(111);}
+
+{com}. reg yos literacy
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20344
+{txt}{hline 13}{char +}{hline 30}           F(  1, 20342) ={res} 7017.16
+    {txt}   Model {char |} {res} 64437.4635     1  64437.4635           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}  186797.24 20342  9.18283553           {txt}R-squared     = {res} 0.2565
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.2564
+    {txt}   Total {char |} {res} 251234.704 20343  12.3499338           {txt}Root MSE      = {res} 3.0303
+
+{txt}{hline 13}{c TT}{hline 64}
+         yos {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+    literacy {c |}  {res} .0329932   .0003939    83.77   0.000     .0322212    .0337651
+{txt}       _cons {c |}  {res} 3.508035   .1108555    31.65   0.000     3.290749    3.725321
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. correlate
+{txt}(obs=18354)
+
+             {c |}  country      sex      age    hours     wage      yos     educ literacy     born    sqage    lnage  lnhours    lnyos
+{hline 13}{c +}{hline 117}
+     country {c |}{res}   1.0000
+         {txt}sex {c |}{res}  -0.0106   1.0000
+         {txt}age {c |}{res}  -0.0151  -0.0109   1.0000
+       {txt}hours {c |}{res}   0.1003  -0.2755  -0.0098   1.0000
+        {txt}wage {c |}{res}   0.2861  -0.0806  -0.0098   0.1720   1.0000
+         {txt}yos {c |}{res}  -0.0457   0.0194  -0.0578  -0.0207  -0.0067   1.0000
+        {txt}educ {c |}{res}  -0.0259   0.0338   0.0241  -0.0271   0.0334   0.7821   1.0000
+    {txt}literacy {c |}{res}  -0.1297   0.0975  -0.0987  -0.1258  -0.1198   0.4973   0.4703   1.0000
+        {txt}born {c |}{res}  -0.0163  -0.0031   0.0363  -0.0090  -0.0390  -0.0073   0.0193  -0.1311   1.0000
+       {txt}sqage {c |}{res}  -0.0141  -0.0155   0.9886  -0.0184  -0.0151  -0.0739   0.0103  -0.1048   0.0387   1.0000
+       {txt}lnage {c |}{res}  -0.0158  -0.0064   0.9869   0.0012  -0.0030  -0.0365   0.0407  -0.0886   0.0350   0.9521   1.0000
+     {txt}lnhours {c |}{res}   0.0860  -0.2558   0.0046   0.9236   0.1385  -0.0020  -0.0084  -0.0962  -0.0087  -0.0071   0.0193   1.0000
+       {txt}lnyos {c |}{res}  -0.0577   0.0364  -0.0909  -0.0350  -0.0232   0.9534   0.7210   0.5068  -0.0365  -0.1062  -0.0700  -0.0118   1.0000
+  {txt}lnliteracy {c |}{res}  -0.1077   0.0968  -0.0934  -0.1238  -0.1114   0.4833   0.4465   0.9741  -0.1503  -0.0987  -0.0844  -0.0947   0.5092
+ {txt}_Icountry_6 {c |}{res}  -0.4348   0.0008   0.0216   0.0637  -0.0975   0.0922   0.0994   0.0195   0.1309   0.0242   0.0194   0.0613   0.0857
+ {txt}_Icountry_8 {c |}{res}  -0.3777  -0.0153  -0.0567  -0.1385  -0.0958   0.0839   0.0023   0.0987  -0.0166  -0.0586  -0.0528  -0.1578   0.0686
+ {txt}_Icountry_9 {c |}{res}  -0.2946   0.0121  -0.0019   0.0949  -0.0831  -0.0539  -0.0892  -0.1683  -0.0471  -0.0102   0.0066   0.0682  -0.0393
+{txt}_Icountry_11 {c |}{res}  -0.2696   0.0118   0.0708  -0.0776  -0.0452  -0.0574   0.0101   0.1672   0.0024   0.0767   0.0630  -0.0469  -0.0599
+{txt}_Icountry_17 {c |}{res}  -0.0265  -0.0127  -0.0018  -0.0712  -0.0824  -0.0084  -0.0406  -0.0394  -0.0347  -0.0092   0.0064  -0.0446  -0.0132
+{txt}_Icountry_18 {c |}{res}   0.0070  -0.0026   0.0412  -0.0831  -0.0278   0.0161   0.1588   0.1412  -0.0116   0.0465   0.0342  -0.0797   0.0284
+{txt}_Icountry_20 {c |}{res}   0.0664   0.0118  -0.0565   0.0565   0.2815  -0.0802  -0.0626  -0.1676   0.0384  -0.0611  -0.0501   0.0614  -0.0653
+{txt}_Icountry_21 {c |}{res}   0.1108   0.0376   0.0385   0.0883  -0.0622   0.0379  -0.0481   0.0129  -0.0479   0.0348   0.0400   0.0898   0.0526
+{txt}_Icountry_23 {c |}{res}   0.2284  -0.0168   0.0343  -0.0319  -0.0138   0.0737   0.0428   0.0332  -0.0612   0.0340   0.0336  -0.0012   0.0781
+{txt}_Icountry_24 {c |}{res}   0.2315   0.0105   0.0054  -0.0094  -0.0624   0.0515   0.0085   0.1275  -0.0541   0.0016   0.0085   0.0125   0.0504
+{txt}_Icountry_25 {c |}{res}   0.2140   0.0256  -0.0281   0.0620  -0.0701  -0.0178  -0.0142  -0.1093  -0.0467  -0.0278  -0.0291   0.0576  -0.0071
+{txt}_Icountry_26 {c |}{res}        .        .        .        .        .        .        .        .        .        .        .        .        .
+{txt}_Icountry_27 {c |}{res}   0.3910   0.0006  -0.0018  -0.0496  -0.1020   0.0468   0.0468   0.0150   0.1973   0.0023  -0.0037  -0.0630   0.0470
+{txt}_Icountry_29 {c |}{res}   0.3847  -0.0543  -0.0675   0.1963   0.5820  -0.1876  -0.1366  -0.2696  -0.0624  -0.0627  -0.0708   0.1288  -0.2381
+
+             {txt}{c |} lnlite~y _Icou~_6 _Icou~_8 _Icou~_9 _Icou~11 _Icou~17 _Icou~18 _Icou~20 _Icou~21 _Icou~23 _Icou~24 _Icou~25 _Icou~26
+{hline 13}{c +}{hline 117}
+  lnliteracy {c |}{res}   1.0000
+ {txt}_Icountry_6 {c |}{res}  -0.0046   1.0000
+ {txt}_Icountry_8 {c |}{res}   0.0964  -0.0815   1.0000
+ {txt}_Icountry_9 {c |}{res}  -0.1631  -0.0707  -0.0739   1.0000
+{txt}_Icountry_11 {c |}{res}   0.1453  -0.0836  -0.0874  -0.0759   1.0000
+{txt}_Icountry_17 {c |}{res}  -0.0361  -0.0664  -0.0694  -0.0602  -0.0712   1.0000
+{txt}_Icountry_18 {c |}{res}   0.1335  -0.0972  -0.1016  -0.0882  -0.1043  -0.0828   1.0000
+{txt}_Icountry_20 {c |}{res}  -0.1633  -0.0654  -0.0684  -0.0594  -0.0702  -0.0557  -0.0816   1.0000
+{txt}_Icountry_21 {c |}{res}   0.0240  -0.0746  -0.0780  -0.0677  -0.0801  -0.0636  -0.0931  -0.0627   1.0000
+{txt}_Icountry_23 {c |}{res}   0.0499  -0.0941  -0.0984  -0.0854  -0.1010  -0.0802  -0.1174  -0.0790  -0.0901   1.0000
+{txt}_Icountry_24 {c |}{res}   0.1192  -0.0799  -0.0835  -0.0725  -0.0857  -0.0680  -0.0996  -0.0671  -0.0765  -0.0965   1.0000
+{txt}_Icountry_25 {c |}{res}  -0.0890  -0.0635  -0.0664  -0.0577  -0.0682  -0.0541  -0.0793  -0.0534  -0.0608  -0.0768  -0.0651   1.0000
+{txt}_Icountry_26 {c |}{res}        .        .        .        .        .        .        .        .        .        .        .        .        .
+{txt}_Icountry_27 {c |}{res}   0.0206  -0.0907  -0.0948  -0.0823  -0.0973  -0.0773  -0.1132  -0.0762  -0.0869  -0.1096  -0.0930  -0.0740        .
+{txt}_Icountry_29 {c |}{res}  -0.2704  -0.0732  -0.0766  -0.0665  -0.0786  -0.0624  -0.0914  -0.0615  -0.0701  -0.0885  -0.0751  -0.0597        .
+
+             {txt}{c |} _Icou~27 _Icou~29
+{hline 13}{c +}{hline 18}
+_Icountry_27 {c |}{res}   1.0000
+{txt}_Icountry_29 {c |}{res}  -0.0853   1.0000
+
+
+{com}. sum  country
+
+{txt}    Variable {c |}       Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 56}
+     country {c |}{res}     20388     18.4637    7.671328          5         29
+
+{com}. tab  country
+
+       {txt}country {c |}      Freq.     Percent        Cum.
+{hline 15}{c +}{hline 35}
+       germany {c |}{res}        832        4.08        4.08
+{txt}           usa {c |}{res}      1,352        6.63       10.71
+{txt}   netherlands {c |}{res}      1,450        7.11       17.82
+{txt}        poland {c |}{res}      1,117        5.48       23.30
+{txt}        sweden {c |}{res}      1,545        7.58       30.88
+{txt}         italy {c |}{res}        985        4.83       35.71
+{txt}        norway {c |}{res}      1,990        9.76       45.47
+{txt}      slovenia {c |}{res}        956        4.69       50.16
+{txt}czech republic {c |}{res}      1,275        6.25       56.42
+{txt}       denmark {c |}{res}      1,904        9.34       65.75
+{txt}       finland {c |}{res}      1,393        6.83       72.59
+{txt}       hungary {c |}{res}        922        4.52       77.11
+{txt}        canada {c |}{res}      1,643        8.06       85.17
+{txt}   switzerland {c |}{res}      1,815        8.90       94.07
+{txt}         chile {c |}{res}      1,209        5.93      100.00
+{txt}{hline 15}{c +}{hline 35}
+         Total {c |}{res}     20,388      100.00
+
+{com}. sum wage if county==17
+{err}county not found
+{txt}{search r(111):r(111);}
+
+{com}. sum wage if country==17
+
+{txt}    Variable {c |}       Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 56}
+        wage {c |}{res}       985    32593.02    18480.71       5000     210000
+
+{com}. {txt}- preserve
+{com}sum wage if country==29
+
+{txt}    Variable {c |}       Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 56}
+        wage {c |}{res}      1209     1805280     1929759      20000   2.40e+07
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. gen cvwage = wage / 0.988051201 if country == 5
+{txt}(19556 missing values generated)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. gen cvwage = wage / 0.905964798 if country == 8
+{err}cvwage already defined
+{txt}{search r(110):r(110);}
+
+end of do-file
+
+{search r(110):r(110);}
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 0.905964798 if country == 8
+{txt}(1450 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 1.657925035 if country == "Poland"
+{err}type mismatch
+{txt}{search r(109):r(109);}
+
+end of do-file
+
+{search r(109):r(109);}
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 1.657925035 if country == 9
+{txt}(1117 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 0.808346548 if country == 17
+{txt}(985 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 9.369831211 if country == 11 
+{txt}(1545 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 9.385982807 if country == 18
+{txt}(1990 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 0.484806621 if country == 20
+{txt}(956 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 13.89019109 if country == 21
+{txt}(1275 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 8.394664991 if country == 23
+{txt}(1904 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 1.002950595 if country == 24
+{txt}(1393 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 94.16743431 if country == 25
+{txt}(922 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 94.16743431 if country == 25
+{txt}(0 real changes made)
+
+{com}. replace cvwage = wage / 1.187534322 if country == 26
+{txt}(1643 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 1.87869376  if country == 27
+{txt}(1815 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage / 274.8650472  if country == 29
+{txt}(1209 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. replace cvwage = wage if country == 6
+{txt}(1352 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. gen lnwage = ln(cvwage)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. cvwage  educ literacy yos
+{err}unrecognized command:  cvwage
+{txt}{search r(199):r(199);}
+
+{com}. reg cvwage  educ literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18561
+{txt}{hline 13}{char +}{hline 30}           F(  3, 18557) ={res}   77.18
+    {txt}   Model {char |} {res} 7.5705e+13     3  2.5235e+13           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 6.0676e+15 18557  3.2697e+11           {txt}R-squared     = {res} 0.0123
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0122
+    {txt}   Total {char |} {res} 6.1433e+15 18560  3.3100e+11           {txt}Root MSE      = {res} 5.7e+05
+
+{txt}{hline 13}{c TT}{hline 64}
+      cvwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} 9053.849   3587.648     2.52   0.012     2021.729    16085.97
+{txt}    literacy {c |}  {res}-1376.332   90.73771   -15.17   0.000    -1554.186   -1198.478
+{txt}         yos {c |}  {res} 5913.919   1821.087     3.25   0.001     2344.422    9483.417
+{txt}       _cons {c |}  {res} 421784.2   23110.33    18.25   0.000     376485.8    467082.6
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}.  xi : reg cvwage  educ literacy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18561
+{txt}{hline 13}{char +}{hline 30}           F( 16, 18544) ={res} 3705.58
+    {txt}   Model {char |} {res} 4.6797e+15    16  2.9248e+14           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 1.4637e+15 18544  7.8929e+10           {txt}R-squared     = {res} 0.7617
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.7615
+    {txt}   Total {char |} {res} 6.1433e+15 18560  3.3100e+11           {txt}Root MSE      = {res} 2.8e+05
+
+{txt}{hline 13}{c TT}{hline 64}
+      cvwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} 6851.268   1829.478     3.74   0.000     3265.324    10437.21
+{txt}    literacy {c |}  {res} 180.8326   49.40857     3.66   0.000     83.98731     277.678
+{txt}         yos {c |}  {res} 5775.431   935.8601     6.17   0.000     3941.059    7609.802
+{txt} _Icountry_6 {c |}  {res}-22233.27   12954.51    -1.72   0.086    -47625.31    3158.768
+{txt} _Icountry_8 {c |}  {res}-387.1811   12708.78    -0.03   0.976    -25297.56     24523.2
+{txt} _Icountry_9 {c |}  {res} 1085.257   13451.72     0.08   0.936    -25281.34    27451.86
+{txt}_Icountry_11 {c |}  {res}-24779.36    12616.2    -1.96   0.050    -49508.27   -50.45771
+{txt}_Icountry_17 {c |}  {res} 3431.042   13678.57     0.25   0.802     -23380.2    30242.29
+{txt}_Icountry_18 {c |}  {res}-28242.26   12209.92    -2.31   0.021    -52174.83   -4309.694
+{txt}_Icountry_20 {c |}  {res}  2271308   13891.45   163.50   0.000      2244079     2298537
+{txt}_Icountry_21 {c |}  {res}-34720.07   13006.21    -2.67   0.008    -60213.43   -9226.705
+{txt}_Icountry_23 {c |}  {res}-18827.03   12205.22    -1.54   0.123    -42750.39    5096.327
+{txt}_Icountry_24 {c |}  {res}  72172.8   12786.71     5.64   0.000     47109.68    97235.93
+{txt}_Icountry_25 {c |}  {res}-33670.16   13987.44    -2.41   0.016    -61086.82   -6253.497
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res}-16839.46   12337.38    -1.36   0.172    -41021.86     7342.93
+{txt}_Icountry_29 {c |}  {res}-3710.283   13398.46    -0.28   0.782    -29972.49    22551.92
+{txt}       _cons {c |}  {res}-105414.8   16278.39    -6.48   0.000      -137322   -73507.69
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. reg lnwage  educ literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18561
+{txt}{hline 13}{char +}{hline 30}           F(  3, 18557) ={res}  123.72
+    {txt}   Model {char |} {res} 1001.40353     3  333.801176           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 50066.4276 18557  2.69798069           {txt}R-squared     = {res} 0.0196
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0195
+    {txt}   Total {char |} {res} 51067.8311 18560  2.75149952           {txt}Root MSE      = {res} 1.6426
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} .0194771   .0103056     1.89   0.059    -.0007228    .0396771
+{txt}    literacy {c |}  {res} .0014552   .0002606     5.58   0.000     .0009444    .0019661
+{txt}         yos {c |}  {res} .0439358   .0052311     8.40   0.000     .0336823    .0541892
+{txt}       _cons {c |}  {res} 9.014452    .066385   135.79   0.000     8.884331    9.144573
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi : reg lnwage  educ literacy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18561
+{txt}{hline 13}{char +}{hline 30}           F( 16, 18544) ={res} 6504.22
+    {txt}   Model {char |} {res} 43344.2306    16  2709.01441           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 7723.60048 18544   .41650132           {txt}R-squared     = {res} 0.8488
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.8486
+    {txt}   Total {char |} {res} 51067.8311 18560  2.75149952           {txt}Root MSE      = {res} .64537
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} .0656775   .0042026    15.63   0.000     .0574401     .073915
+{txt}    literacy {c |}  {res} .0003358   .0001135     2.96   0.003     .0001134    .0005583
+{txt}         yos {c |}  {res} .0277079   .0021498    12.89   0.000      .023494    .0319217
+{txt} _Icountry_6 {c |}  {res}-.2395756   .0297584    -8.05   0.000    -.2979049   -.1812463
+{txt} _Icountry_8 {c |}  {res} .3018681    .029194    10.34   0.000     .2446453    .3590909
+{txt} _Icountry_9 {c |}  {res}-.1695545   .0309006    -5.49   0.000    -.2301225   -.1089865
+{txt}_Icountry_11 {c |}  {res}-.6065685   .0289813   -20.93   0.000    -.6633744   -.5497625
+{txt}_Icountry_17 {c |}  {res} .2385444   .0314217     7.59   0.000      .176955    .3001338
+{txt}_Icountry_18 {c |}  {res}-.4860944    .028048   -17.33   0.000    -.5410711   -.4311178
+{txt}_Icountry_20 {c |}  {res} 4.330895   .0319107   135.72   0.000     4.268347    4.393443
+{txt}_Icountry_21 {c |}  {res}-1.431134   .0298772   -47.90   0.000    -1.489696   -1.372572
+{txt}_Icountry_23 {c |}  {res} -.148122   .0280372    -5.28   0.000    -.2030775   -.0931665
+{txt}_Icountry_24 {c |}  {res} 1.228932    .029373    41.84   0.000     1.171358    1.286506
+{txt}_Icountry_25 {c |}  {res}-4.162089   .0321312  -129.53   0.000    -4.225069   -4.099109
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res}-.1954795   .0283408    -6.90   0.000      -.25103   -.1399289
+{txt}_Icountry_29 {c |}  {res}-1.687186   .0307782   -54.82   0.000    -1.747514   -1.626858
+{txt}       _cons {c |}  {res} 9.589418   .0373939   256.44   0.000     9.516122    9.662713
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi : reg lnwage  educ lnliteracy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18559
+{txt}{hline 13}{char +}{hline 30}           F( 16, 18542) ={res} 6507.99
+    {txt}   Model {char |} {res} 43345.0832    16   2709.0677           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res}  7718.4388 18542  .416267867           {txt}R-squared     = {res} 0.8488
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.8487
+    {txt}   Total {char |} {res}  51063.522 18558  2.75156385           {txt}Root MSE      = {res} .64519
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} .0656351   .0041867    15.68   0.000     .0574288    .0738415
+{txt}  lnliteracy {c |}  {res} .1165034    .025682     4.54   0.000     .0661644    .1668424
+{txt}         yos {c |}  {res} .0266746   .0021542    12.38   0.000     .0224521    .0308971
+{txt} _Icountry_6 {c |}  {res}-.2342046   .0297854    -7.86   0.000    -.2925867   -.1758224
+{txt} _Icountry_8 {c |}  {res} .3025114   .0291863    10.36   0.000     .2453036    .3597192
+{txt} _Icountry_9 {c |}  {res}-.1626183   .0308704    -5.27   0.000    -.2231272   -.1021095
+{txt}_Icountry_11 {c |}  {res}-.6077627   .0289375   -21.00   0.000    -.6644829   -.5510425
+{txt}_Icountry_17 {c |}  {res} .2419299   .0314089     7.70   0.000     .1803656    .3034942
+{txt}_Icountry_18 {c |}  {res}-.4864185   .0280387   -17.35   0.000    -.5413769   -.4314601
+{txt}_Icountry_20 {c |}  {res} 4.337876    .031876   136.09   0.000     4.275396    4.400356
+{txt}_Icountry_21 {c |}  {res}-1.429383    .029865   -47.86   0.000    -1.487921   -1.370845
+{txt}_Icountry_23 {c |}  {res}-.1470369   .0280158    -5.25   0.000    -.2019505   -.0921234
+{txt}_Icountry_24 {c |}  {res} 1.228906    .029359    41.86   0.000     1.171359    1.286452
+{txt}_Icountry_25 {c |}  {res}-4.158054   .0320499  -129.74   0.000    -4.220875   -4.095233
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res}-.1934313   .0283298    -6.83   0.000    -.2489603   -.1379022
+{txt}_Icountry_29 {c |}  {res}-1.677704   .0307709   -54.52   0.000    -1.738018    -1.61739
+{txt}       _cons {c |}  {res} 9.040781   .1393359    64.88   0.000      8.76767    9.313892
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. reg lnwage hours educ literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18406
+{txt}{hline 13}{char +}{hline 30}           F(  4, 18401) ={res}  117.72
+    {txt}   Model {char |} {res} 1264.45753     4  316.114383           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 49414.0566 18401  2.68540061           {txt}R-squared     = {res} 0.0250
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0247
+    {txt}   Total {char |} {res} 50678.5142 18405  2.75351884           {txt}Root MSE      = {res} 1.6387
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+       hours {c |}  {res} .0113144   .0011416     9.91   0.000     .0090768    .0135519
+{txt}        educ {c |}  {res} .0176014   .0103161     1.71   0.088    -.0026192     .037822
+{txt}    literacy {c |}  {res} .0017424   .0002634     6.61   0.000      .001226    .0022587
+{txt}         yos {c |}  {res} .0438277   .0052418     8.36   0.000     .0335533    .0541022
+{txt}       _cons {c |}  {res} 8.507154   .0844567   100.73   0.000     8.341611    8.672697
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi : reg lnwage  hours educ lnliteracy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18404
+{txt}{hline 13}{char +}{hline 30}           F( 17, 18386) ={res} 7190.13
+    {txt}   Model {char |} {res} 44048.4653    17  2591.08619           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 6625.71266 18386  .360367272           {txt}R-squared     = {res} 0.8692
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.8691
+    {txt}   Total {char |} {res} 50674.1779 18403  2.75358246           {txt}Root MSE      = {res} .60031
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+       hours {c |}  {res} .0233248   .0004375    53.31   0.000     .0224673    .0241823
+{txt}        educ {c |}  {res} .0641716   .0039084    16.42   0.000     .0565108    .0718324
+{txt}  lnliteracy {c |}  {res} .1562241   .0240019     6.51   0.000     .1091782      .20327
+{txt}         yos {c |}  {res}  .024659   .0020128    12.25   0.000     .0207137    .0286044
+{txt} _Icountry_6 {c |}  {res} -.332269   .0281188   -11.82   0.000    -.3873844   -.2771535
+{txt} _Icountry_8 {c |}  {res} .3742193   .0275247    13.60   0.000     .3202683    .4281703
+{txt} _Icountry_9 {c |}  {res}-.2952435   .0291854   -10.12   0.000    -.3524495   -.2380375
+{txt}_Icountry_11 {c |}  {res}-.5964809    .027313   -21.84   0.000    -.6500168   -.5429449
+{txt}_Icountry_17 {c |}  {res} .2715238     .02955     9.19   0.000     .2136031    .3294446
+{txt}_Icountry_18 {c |}  {res} -.473046   .0264369   -17.89   0.000    -.5248648   -.4212272
+{txt}_Icountry_20 {c |}  {res} 4.236655   .0300225   141.12   0.000     4.177808    4.295502
+{txt}_Icountry_21 {c |}  {res}-1.547554   .0284131   -54.47   0.000    -1.603247   -1.491862
+{txt}_Icountry_23 {c |}  {res}-.1683746   .0264647    -6.36   0.000    -.2202479   -.1165013
+{txt}_Icountry_24 {c |}  {res} 1.190727   .0276753    43.02   0.000     1.136481    1.244973
+{txt}_Icountry_25 {c |}  {res}-4.263955   .0302783  -140.83   0.000    -4.323303   -4.204606
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res}-.1971232   .0267165    -7.38   0.000    -.2494899   -.1447565
+{txt}_Icountry_29 {c |}  {res}-1.906792   .0292759   -65.13   0.000    -1.964175   -1.849408
+{txt}       _cons {c |}  {res} 7.981802   .1316213    60.64   0.000     7.723812    8.239792
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. xi : reg lnwage  age hours educ lnliteracy yos i.country
+{txt}i.country{col 19}_Icountry_5-29{col 39}(naturally coded; _Icountry_5 omitted)
+
+      Source {c |}       SS       df       MS              Number of obs ={res}   18395
+{txt}{hline 13}{char +}{hline 30}           F( 18, 18376) ={res} 7549.80
+    {txt}   Model {char |} {res} 44633.8121    18  2479.65623           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 6035.41393 18376  .328440026           {txt}R-squared     = {res} 0.8809
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.8808
+    {txt}   Total {char |} {res} 50669.2261 18394  2.75466054           {txt}Root MSE      = {res}  .5731
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         age {c |}  {res} .0168918   .0004002    42.21   0.000     .0161074    .0176763
+{txt}       hours {c |}  {res} .0233484    .000418    55.86   0.000     .0225291    .0241678
+{txt}        educ {c |}  {res} .0460865   .0037561    12.27   0.000     .0387243    .0534487
+{txt}  lnliteracy {c |}  {res} .2916834   .0231461    12.60   0.000     .2463149     .337052
+{txt}         yos {c |}  {res} .0318203   .0019292    16.49   0.000     .0280389    .0356017
+{txt} _Icountry_6 {c |}  {res}-.3744627   .0268897   -13.93   0.000    -.4271689   -.3217564
+{txt} _Icountry_8 {c |}  {res} .3662407   .0262779    13.94   0.000     .3147335    .4177478
+{txt} _Icountry_9 {c |}  {res}-.3075599   .0278644   -11.04   0.000    -.3621767    -.252943
+{txt}_Icountry_11 {c |}  {res} -.677117   .0261449   -25.90   0.000    -.7283635   -.6258706
+{txt}_Icountry_17 {c |}  {res} .2454666   .0282175     8.70   0.000     .1901577    .3007755
+{txt}_Icountry_18 {c |}  {res}-.5216976    .025265   -20.65   0.000    -.5712194   -.4721757
+{txt}_Icountry_20 {c |}  {res} 4.274701   .0286764   149.07   0.000     4.218492    4.330909
+{txt}_Icountry_21 {c |}  {res}-1.614044   .0271709   -59.40   0.000    -1.667302   -1.560787
+{txt}_Icountry_23 {c |}  {res}-.2212669   .0252963    -8.75   0.000      -.27085   -.1716839
+{txt}_Icountry_24 {c |}  {res} 1.142683   .0264455    43.21   0.000     1.090848    1.194519
+{txt}_Icountry_25 {c |}  {res}-4.257237   .0289067  -147.28   0.000    -4.313897   -4.200577
+{txt}_Icountry_26 {c |}  {res}(dropped)
+{txt}_Icountry_27 {c |}  {res}-.2249182   .0255141    -8.82   0.000    -.2749282   -.1749082
+{txt}_Icountry_29 {c |}  {res}-1.852902   .0279793   -66.22   0.000    -1.907744    -1.79806
+{txt}       _cons {c |}  {res} 6.563138   .1301064    50.44   0.000     6.308117    6.818159
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. graph hbox educ, over(country)
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. graph hbox yos, over(country)
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. histogram literacy
+{txt}(bin={res}43{txt}, start={res}0{txt}, width={res}11.292598{txt})
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. reg cvwage  educ literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18561
+{txt}{hline 13}{char +}{hline 30}           F(  3, 18557) ={res}   77.18
+    {txt}   Model {char |} {res} 7.5705e+13     3  2.5235e+13           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 6.0676e+15 18557  3.2697e+11           {txt}R-squared     = {res} 0.0123
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0122
+    {txt}   Total {char |} {res} 6.1433e+15 18560  3.3100e+11           {txt}Root MSE      = {res} 5.7e+05
+
+{txt}{hline 13}{c TT}{hline 64}
+      cvwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+        educ {c |}  {res} 9053.849   3587.648     2.52   0.012     2021.729    16085.97
+{txt}    literacy {c |}  {res}-1376.332   90.73771   -15.17   0.000    -1554.186   -1198.478
+{txt}         yos {c |}  {res} 5913.919   1821.087     3.25   0.001     2344.422    9483.417
+{txt}       _cons {c |}  {res} 421784.2   23110.33    18.25   0.000     376485.8    467082.6
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. reg lnwage hours educ literacy yos
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   18406
+{txt}{hline 13}{char +}{hline 30}           F(  4, 18401) ={res}  117.72
+    {txt}   Model {char |} {res} 1264.45753     4  316.114383           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 49414.0566 18401  2.68540061           {txt}R-squared     = {res} 0.0250
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0247
+    {txt}   Total {char |} {res} 50678.5142 18405  2.75351884           {txt}Root MSE      = {res} 1.6387
+
+{txt}{hline 13}{c TT}{hline 64}
+      lnwage {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+       hours {c |}  {res} .0113144   .0011416     9.91   0.000     .0090768    .0135519
+{txt}        educ {c |}  {res} .0176014   .0103161     1.71   0.088    -.0026192     .037822
+{txt}    literacy {c |}  {res} .0017424   .0002634     6.61   0.000      .001226    .0022587
+{txt}         yos {c |}  {res} .0438277   .0052418     8.36   0.000     .0335533    .0541022
+{txt}       _cons {c |}  {res} 8.507154   .0844567   100.73   0.000     8.341611    8.672697
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Jana\AppData\Local\Temp\STD00000000.tmp"
+{txt}
+{com}. /*simple regression */
+. reg literacy sex age
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F(  2, 20376) ={res}  245.12
+    {txt}   Model {char |} {res} 1392875.71     2  696437.853           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 57893182.9 20376  2841.24376           {txt}R-squared     = {res} 0.0235
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0234
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res} 53.303
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 11.11268   .7478249    14.86   0.000     9.646888    12.57848
+{txt}         age {c |}  {res}-.5499831   .0339139   -16.22   0.000    -.6164572   -.4835091
+{txt}       _cons {c |}  {res} 292.3444   1.420372   205.82   0.000     289.5604    295.1285
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. /*adding square of age */
+. reg literacy sex age sqage 
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}   20379
+{txt}{hline 13}{char +}{hline 30}           F(  3, 20375) ={res}  177.62
+    {txt}   Model {char |} {res} 1510958.27     3  503652.758           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 57775100.4 20375  2835.58775           {txt}R-squared     = {res} 0.0255
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0253
+    {txt}   Total {char |} {res} 59286058.6 20378  2909.31684           {txt}Root MSE      = {res}  53.25
+
+{txt}{hline 13}{c TT}{hline 64}
+    literacy {c |}      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+{hline 13}{char +}{hline 64}
+         sex {c |}  {res} 10.95263   .7474917    14.65   0.000     9.487491    12.41778
+{txt}         age {c |}  {res} .8181285   .2146971     3.81   0.000      .397305    1.238952
+{txt}       sqage {c |}  {res} -.017151   .0026578    -6.45   0.000    -.0223605   -.0119416
+{txt}       _cons {c |}  {res} 267.2335   4.141914    64.52   0.000      259.115     275.352
+{txt}{hline 13}{c BT}{hline 64}
+
+{com}. 
+{txt}end of do-file
+
+{com}. 
