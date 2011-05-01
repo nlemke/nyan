@@ -252,6 +252,37 @@
     h_{ijt}- h_{ij,t-1} &=& gh_{ij,t-1}+ \dfrac{n}{1+n}(H_{ij,t-1} - h_{ij,t-1} ), \forall t \geq
     1
   \end{eqnarray}
+  Furthermore, it is shown how job-specific human capital grows with "tenure" (time on the job).
+  \setcounter{equation}{2}
+  \begin{eqnarray}
+    h_{ijt} &=& (1+g)^t h_{ij0} (1+(k^t)\lambda_{ij}) , \mbox{  with  } \lambda_{ij} =
+    \dfrac{H_{ij0}}{h_{ij0}} -1 \forall \lambda{ij} \geq 0
+  \end{eqnarray}
+  $\lambda_{ij}$ denotes the job-specific learning from others' potential, it is independent of
+  tenure. Now, the equation is converted in natural logarithms (for econometric estimation)
+  \begin{eqnarray}
+    \log h_{iht} &=& \log h_{ij0} + gt + \log (1+ \lambda_{ij}(1-k^t))
+  \end{eqnarray}
+  $\lambda$ can probably be approximated:
+  \begin{eqnarray}
+    \log h_{iht} &=& \log h_{ij0} + gt + \lambda_{ij}(1-k^t) \mbox{  with  } \lambda_{ij} = \log
+    \dfrac{H_{ij0}}{h_{ij0}}
+  \end{eqnarray}
+  Now, the logarithm of gross earnings is the sum of a linear-in-tenure experience effect and an
+  exponential effect of learning from others that converges fast towards the firm's job-specific
+  learning potential.
+
+  \subsubsection{The returns to tenure} % (fold)
+  \label{ssub:The returns to tenure}
+  The marginal returns to tenure ($R$) are defined as:
+  \begin{eqnarray*}
+    R_{ijt} &=& \dfrac{h_{ijt}- h_{ij,t-1}}{h_{ij,t-1}} \mbox{  } \forall t \geq 1
+  \end{eqnarray*}
+  "after a few manipulations"
+  \begin{eqnarray}
+    R_{ijt} &=& g + \dfrac{n}{n+1} \left( \dfrac{\lambda_{ij} k^{t-1}}{1+\lambda_{ij}(1-k^{t-1})} \right)
+  \end{eqnarray}
+  % subsubsection The returns to tenure (end)
 
   \subsection{(Ertaut, 2000) "Non-formal learning and tacit knowledge in professional work"} % (fold)
   \label{sec:(Ertaut, 2000}
