@@ -6,6 +6,7 @@
 \usepackage{amsmath} % Mathe
 \usepackage[utf8]{inputenc} % Direkte Eingabe von Umlauten und anderen Diakritika
 \usepackage{graphicx}
+\usepackage{enumitem}
 %\renewcommand{\rmdefault}{\sfdefault}
 %\renewcommand{\baselinestretch}{1.5}
 \usepackage{fullpage}
@@ -187,9 +188,62 @@
 
   \subsection{(Ben-Porath, 1967) "The Production of Human Capital and the Life Cycle of Earnings"} % (fold)
   \subsubsection{Assumptions}
-    
-  \subsubsection{Fact sheet} % (fold)
-  \begin{enumerate}
+    \begin{enumerate}
+      \item Individual utility is not a function of activities involving time as an input.
+      \item There is a fixed amount of time to be allocated every period to activities that produce earnings and additions to the stock of human capital.
+      \item The stock of human capital, $K$, of which every indivudal has some initial endowment, is homogeneous and subject to an exogenouslygiven rate of deterioration, $\delta$.
+      \item The stock of human capital is not an argument in the individual's utility function.
+      \item Unlimited borrowing and lending take place at a constant rate of interest, $r$.
+    \end{enumerate}
+  \subsubsection{Two stages of decision-making}
+  \begin{enumerate}[label={\alph*)}]
+      \item The individual allocates the given periods of time between earning and producing human capital and finds the corresponding outlays on investment that maximize the discounted value of any time $t$ of disposable earnings from $t$ to $T$, where $T$ is assumed with certainty to be the end of life.
+      \item Given the optimal time path of disposable earnings, the individual decides on the timing of the consumption.
+    \end{enumerate}
+  \subsubsection{The Model} % (fold)
+  \setcounter{equation}{0}
+  \begin{itemize}
+    \item[$a_0$] wage, or ``rental of human capital''
+    \item[$K$] a unit of human capital
+    \item[$Y_T$] earning capacity at time $t$
+  \end{itemize}
+
+  \begin{align}
+    Y_t=\alpha_0K_t
+  \end{align}
+
+  \begin{itemize}
+    \item[$E_t$] disposable earnings in period $t$
+    \item[$I_T$] cost of investment, equal to $(Y_t-E_t)$
+  \end{itemize}
+
+  \begin{align}
+    \begin{split}
+      Q_t&=\beta_0(s_tK_t)^{\beta_1}D^{\beta_2}_t $,$\\
+      $where $\beta_1, \beta_2 > 0&$ and $\beta_1+\beta_2<1
+    \end{split}
+  \end{itemize}
+  \begin{itemize}
+    \item[$Q$] flow of human capital produced
+    \item[$D$] quantity of purchased inputs
+    \item[$P_d$] price of purchased inputs
+    \item[$s_t$] fraction of available stock of human capital allocated to the production of human capital
+  \end{itemize}
+  The fraction $s_t$ is constrained by the condition
+  \begin{align}
+    0\leqs_t\leq1
+  \end{align}
+  The rate of change of the capital stock:
+  \begin{align}
+    \dot{K}_t &= Q_t - \delta K_t
+  \end{align}
+  \begin{itemize}
+    \item[$\delta$] rate by which the stock of human capital deteriorates
+  \end{itemize}
+  % Decide whether to include any other of the 16 formulas
+
+  \subsubsection{Findings}
+  \begin{itemize}
     \item People make most of their investments in themselves when they are young, and to a large extend by foregoing current earnings.
     \item The larger the stock of human capital, the larger the earnings per unit of time that the individual could get in the market and therefore the higher the foregone earnings from diverting a unit of time away from the market.
     \item If $\gamma _{1} = \gamma _{2}$ (Cobb-Douglas: Equation (17), p. 360) the more highly educated person is also better equipped for learning, so that his higher opportunity cost is matched by the greater amount of skills that he can acquire per hour.
@@ -205,7 +259,7 @@
     \item If depreciation is zero, there is always, except at point $T$, an increase in the three types of earnings ($E_t$ - disposable earnings, $Y_t$ - earning capacity, $\hat{E}$ - observed earnings), and at each point in time their rank by rate of change will be the reverse of their rank by level.
     \item If there is no deterioration ($\delta = 0$) the ever rising curve of observed earnings is always concave from below.
     \item Possibility that optimal decision requires initial assignment of $s=1$, or $100\%$ of the labour force educating themselves.
-  \end{enumerate}
+  \end{itemize}
 
   \subsection{(Lazear, 2003) "Firm-Specific Human Capital: A Skill-Weights Approach"} % (fold)
   \subsubsection{Fact sheet} % (fold)
