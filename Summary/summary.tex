@@ -222,7 +222,7 @@
       Q_t&=\beta_0(s_tK_t)^{\beta_1}D^{\beta_2}_t $,$\\
       $where $\beta_1, \beta_2 > 0&$ and $\beta_1+\beta_2<1
     \end{split}
-  \end{itemize}
+  \end{align}
   \begin{itemize}
     \item[$Q$] flow of human capital produced
     \item[$D$] quantity of purchased inputs
@@ -501,14 +501,59 @@
 \label{sec:Meeting 5}
   \subsection{(Leuven \& Oosterbeek, 2008) "An alternative approach to estimate the wage returns to private-sector training"} % (fold)
   \label{sub:}
+  This paper introduces the two typical kinds of upward biases found in the studies on return on education / private-sector training. These biases
+  are the selection bias and the bias of unobservables. ($\rightarrow$ ability bias)
   \begin{itemize}
     \item There is a selection bias in many regressions of wages on training, since more able workers (= higher productivity and higher wages) self-select into training.
-    \item It is also hard to find variables that only affect training, but not wages
+    \item It is also hard to find variables that only affect training, but not wages (this is called bias of unobservables)
     \item Thus, the effect of private-sector training is typically overstated
-    \item In this paper, the authors compare the wages of workers that took training to wages of workers who \textbf{wanted} to take training, but could not do so due to some random reason
+    \item In this paper, the authors compare the effect of private-sector training on wages of workers that took training to workers who \textbf{wanted} to take training, but could not do so due to some random reason
     \item Here, the selection bias should be much smaller.
+    \item 
   \end{itemize}
   % subsection  (end)
+  \subsection{(Leigh, 2008) "Estimating returns to education using different natural experimentation techniques"} % (fold)
+  \label{sub:leigh}
+  The authors try to find the return on education in Australia using three natural experiments. Using a regular
+  OLS regression, the return on one additional year of schooling is estimated to be 12\%. However, taking
+  the natural experiments into account:
+  \begin{enumerate}
+    \item \textbf{Month of birth}\\
+          Here they look at individuals that are born just one month to late to begin schooling with their cohort.
+          Because they assume that the other characteristics are comparable, they can identify the return (in terms of wages)
+          of one more year of schooling.\\
+          The estimated return on one additional year of schooling is found to be 8\%
+    \item \textbf{Changes in compulsory schooling laws}\\
+          Here they look at years in which the number of years of schooling was changed in the legislature.
+          Therefore the authors again have a basis of comparison, because again most other characteristics of the
+          observations are likely to be the same.\\
+          The estimated return on one additional year of schooling is found to be 12\%
+    \item \textbf{Twins}\\
+          Here they look at wage differences between twins that have obtained different levels of education.
+          Because the twins are genetically (nearly) identical, they share most of the other characteristics
+          apart from schooling.
+  \end{enumerate}
+  % subsection leigh (end)
+  \subsection{(Bedi \& Gaston, 1999) "Using variation in schooling availability to estimate educational returns for Honduras"} % (fold)
+  \label{sub:bedi}
+  The authors estimate the return on schooling in Honduras (for males) by looking at the actual availability of schools at the
+  time when the individuals were eligible to start schooling. It is pointed out that most studies so far only concentrate
+  on developed countries.
+  % subsection bedi (end)
+abs
+    \subsection{General Remarks} % (fold)
+    \label{sub:General Remarks}
+    \begin{itemize}
+      \item self-selection of clever people: overestimation of the effect of education $\rightarrow$
+        bias
+      \item unobserved factors; ability versus cost of education
+      \item policy implications: Honduras, worthwhile to invest in education? / Which level of
+        education?
+    \end{itemize}
+    % subsection General Remarks (end)
+% section Meeting 5 (end)
+  %\bibliographystyle{apacite} 
+  %\bibliography{lit}
 
 
     \subsection{General Remarks} % (fold)
@@ -550,3 +595,33 @@
   --Moritz
   % section Meeting 10 (end)
 \end{document}
+
+  \appendix
+\section{Glossary} % (fold)
+  \label{sec:Glossary}
+  \subsection{Instrumental Variables (IV)} % (fold)
+  \label{sub:IV}
+  In statistics, econometrics, epidemiology and related disciplines,
+  the method of instrumental variables (IV) is used to estimate
+  causal relationships when controlled experiments are not feasible.
+  Statistically, IV methods allow consistent estimation when the
+  explanatory variables (covariates) are correlated with the error terms.
+  Such correlation may occur when the dependent variable causes at least
+  one of the covariates ("reverse" causation), when there are relevant
+  explanatory variables which are omitted from the model, or when the
+  covariates are subject to measurement error. In this situation, ordinary
+  linear regression generally produces biased and inconsistent estimates.
+  However, if an instrument is available, consistent estimates may still
+  be obtained. An instrument is a variable that does not itself belong
+  in the explanatory equation and is correlated with the endogenous
+  explanatory variables, conditional on the other covariates. 
+
+  In linear models, there are two main requirements for using an IV:
+  \begin{itemize}
+    \item The instrument must be correlated with the endogenous explanatory variables, conditional on the other covariates.
+    \item The instrument cannot be correlated with the error term in the explanatory equation, that is, the instrument cannot suffer from the same problem as the original predicting variable.
+  \end{itemize}
+  \footnotesize{Source: Wikipedia}
+  % subsection IV (end)
+  % section Glossary (end)
+  \end{document}
