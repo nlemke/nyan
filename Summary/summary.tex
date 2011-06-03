@@ -222,7 +222,7 @@
       Q_t&=\beta_0(s_tK_t)^{\beta_1}D^{\beta_2}_t $,$\\
       $where $\beta_1, \beta_2 > 0&$ and $\beta_1+\beta_2<1
     \end{split}
-  \end{itemize}
+  \end{align}
   \begin{itemize}
     \item[$Q$] flow of human capital produced
     \item[$D$] quantity of purchased inputs
@@ -492,12 +492,13 @@
           apart from schooling.
   \end{enumerate}
   % subsection leigh (end)
-  \subsection{(Bedi \& Gaston, 1999)"Using variation in schooling availability to estimate educational returns for Honduras"} % (fold)
+  \subsection{(Bedi \& Gaston, 1999) "Using variation in schooling availability to estimate educational returns for Honduras"} % (fold)
   \label{sub:bedi}
   The authors estimate the return on schooling in Honduras (for males) by looking at the actual availability of schools at the
-  time when the individuals were eligible to start schooling. 
+  time when the individuals were eligible to start schooling. It is pointed out that most studies so far only concentrate
+  on developed countries.
   % subsection bedi (end)
-
+abs
     \subsection{General Remarks} % (fold)
     \label{sub:General Remarks}
     \begin{itemize}
@@ -526,4 +527,33 @@
   \label{sec:Meeting 10}
   --Moritz
   % section Meeting 10 (end)
-\end{document}
+
+  \appendix
+\section{Glossary} % (fold)
+  \label{sec:Glossary}
+  \subsection{Instrumental Variables (IV)} % (fold)
+  \label{sub:IV}
+  In statistics, econometrics, epidemiology and related disciplines,
+  the method of instrumental variables (IV) is used to estimate
+  causal relationships when controlled experiments are not feasible.
+  Statistically, IV methods allow consistent estimation when the
+  explanatory variables (covariates) are correlated with the error terms.
+  Such correlation may occur when the dependent variable causes at least
+  one of the covariates ("reverse" causation), when there are relevant
+  explanatory variables which are omitted from the model, or when the
+  covariates are subject to measurement error. In this situation, ordinary
+  linear regression generally produces biased and inconsistent estimates.
+  However, if an instrument is available, consistent estimates may still
+  be obtained. An instrument is a variable that does not itself belong
+  in the explanatory equation and is correlated with the endogenous
+  explanatory variables, conditional on the other covariates. 
+
+  In linear models, there are two main requirements for using an IV:
+  \begin{itemize}
+    \item The instrument must be correlated with the endogenous explanatory variables, conditional on the other covariates.
+    \item The instrument cannot be correlated with the error term in the explanatory equation, that is, the instrument cannot suffer from the same problem as the original predicting variable.
+  \end{itemize}
+  \footnotesize{Source: Wikipedia}
+  % subsection IV (end)
+  % section Glossary (end)
+  \end{document}
