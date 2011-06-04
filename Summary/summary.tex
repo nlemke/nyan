@@ -10,6 +10,7 @@
 %\renewcommand{\rmdefault}{\sfdefault}
 %\renewcommand{\baselinestretch}{1.5}
 \usepackage{fullpage}
+\usepackage{float}
 \usepackage{apacite}
 \usepackage{hyperref}
 \hypersetup{
@@ -31,40 +32,7 @@
   \thispagestyle{empty}
   \pagebreak
 
-  \section{Meeting 2: Human Capital Theory} % (fold)
-  \subsection{Questions} % (fold)
-  \begin{itemize}
-    \item Becker
-      \begin{itemize}
-        \item What is human capital, what kinds of human capital are discussed
-          \begin{itemize}
-            \item training, education, health, morale, etc.
-          \end{itemize}
-        \item What is the basic model (NPV etc., see below)
-        \item Go through the stylized facts \& find the answers given by Becker (see below)
-      \end{itemize}
-
-    \item Ben-Porath
-      \begin{itemize}
-        \item Does the model portray a realistic view of the labour market? \\
-          \emph{Challenge of discerning between time spent educating and working. Possibility of doing both at same time. Possibility of being paid for work experience not educational, unpaid study time.}
-        \item How does this model, if significant and supported by evidence, help policy makers? \\
-          \emph{Difficulty of measuring $s_t$. Rate of interest $r$, the rental price of human capital $a_0$ and price of purchased inputs $P_d$ can be influenced.}
-        \item In which case could $\delta$ (the rate of deterioration) be negative?
-          \emph{Discuss scenarios in which human capital could increase over time without schooling.}
-      \end{itemize}
-
-    \item Lazear
-      \begin{itemize}
-        \item How does the skill-weights view alleviate some of the problems of classical firm-specific human capital? \\
-          \emph{Firm-specific human capital seems difficult to prove, since most knowledge is at least somewhat universal. An approach based on the relative knowledge of general skills is more applicable/realistic.}
-        \item What are possible drawbacks of this approach? \\
-          \emph{See page 17: Jobs may not pay for skills beyond a certain point (overqualification) or may exhibit diminishing returns on skills. The approach does not take into account not getting a job at all because of minimum requirements on absolute skill levels.}
-      \end{itemize}
-
-  \end{itemize}
-  % part Questions (end)
-
+  \section{Meeting 2} % (fold)
   \subsection{(Becker, 1962) "Investment in Human Capital: A Theoretical Analysis"} % (fold)
   \label{prt:Becker}
 
@@ -72,7 +40,7 @@
   \subsubsection{Stylized Facts} % (fold)
   \begin{enumerate}
     \item Earnings typically increase with age at a decreasing rate. Both the rate of increase and the rate of retardation tend to be positively related the level of skill.\\
-      \begin{figure}[ht]
+      \begin{figure}[H]
         \centering
         \includegraphics[width=8cm]{fig1.pdf}
         \caption{from Becker, p.15}
@@ -81,7 +49,7 @@
       UU is the untrained person, TT trained person (first paying for, then collecting rent from training). Difference between UU and TT greater the greater the cost of and return from training. Not only does training make the curve steeper, but also more concave. Extreme case TT'.
     \item Unemployment rates tend to be negatively related to the level of skill
       \begin{itemize}
-        \item market demand, $MP$...
+        \item market demand, $MP$\dots
       \end{itemize}
     \item Firms in underdeveloped countries appear to be more
       "paternalistic" toward employees than those in developed countries
@@ -311,6 +279,7 @@
   
   \label{sec:Destré et al., 2006}
   \setcounter{equation}{0}
+
   \subsubsection{Introduction} % (fold)
   \label{ssub:Introduction}
   \begin{itemize}
@@ -320,20 +289,28 @@
   Here, the authors have a dataset based in France, of 150,000 wage earners and 16,000
   establishments. They furthermore distinguish informal training by means of learning from own
   experience and learning from others.
-  
-  \begin{figure}[ht]
-        \centering
-        \includegraphics[width=12cm]{dest_1.pdf}
-        \caption{Destre, p. 30}
-        \label{dest_1}
-  \end{figure}
 
-  \begin{figure}[ht]
-        \centering
-        \includegraphics[width=12cm]{dest_2.pdf}
-        \caption{Destre, p.30}
-        \label{dest_2}
-  \end{figure}
+
+  % TODO decide whether the illustration make sense to include
+  % TODO position them in the summary
+  % TODO reference them in the text, explain if necessary
+  \subsubsection{Illustrations to be included. …or not.}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 4 LEARNING FROM EXPERIENCE - Seite 932.pdf}
+      \caption{Destré et al., p. 935: "Schedules of marginal rates of return to tenure for three earnings functions" see also section~\ref{sec:Destre2006}}
+      \label{fig:Destré marginalreturntotenureearningfunction}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 4 LEARNING FROM EXPERIENCE - Seite 935.pdf}
+      \caption{Destré et al., p. 935: "Schedules of marginal rates of return to tenure for imitation and experience jobs" see also section~\ref{sec:Destre2006}}
+      \label{fig:Destré marginalreturntotenure}
+    \end{figure}
+
+
 
   \subsubsection{Informal learning on-the-job from self and others: theory} % (fold)
   \label{ssub:Informal learning on-the-job from self and others: theory}
@@ -400,8 +377,8 @@
   provoke a multiplier effect in subsequent periods by raising the firm's knowledge.
   % subsubsection The returns to tenure (end)
 
-  \subsubsection{Data end econometric specification} % (fold)
-  \label{ssub:Data end econometric specification}
+  \subsubsection{Data and econometric specification} % (fold)
+  \label{ssub:Data and econometric specification}
   Large French cross section with matched employer-employee data, 1992 INSEE survey on labor cost
   and wage structure. Carried out across all EU countries. Regression analysis... additional
   variables defined in table 1 (p. 926).
@@ -488,7 +465,39 @@
   % subsubsection conclusions (end)
 
   \subsection{(Ertaut, 2000) "Non-formal learning and tacit knowledge in professional work"} % (fold)
-  \label{sec:(Ertaut, 2000}
+  \label{sec:Ertaut2000}
+
+  % TODO decide whether the illustration make sense to include
+  % TODO position them in the summary
+  % TODO reference them in the text, explain if necessary
+  \subsubsection{Illustrations to be included. …or not.}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 4 NON-FORMAL LEARNING - Seite 4.pdf}
+      \caption{Ertaut, p. 4: "A typology of non-formal learning" see also section~\ref{sec:Ertaut2000}}
+      \label{fig:Ertaut typology}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 4 NON-FORMAL LEARNING - Seite 5.pdf}
+      \caption{Ertaut, p. 5: "Memory structures and knowledge-acquisition pathways in the explanatory model of tacit knowledge" see also section~\ref{sec:Ertaut2000}}
+      \label{fig:Ertaut tacitknowledgemodel}
+    \end{figure}
+
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 4 NON-FORMAL LEARNING - Seite 17.pdf}
+      \caption{Ertaut, p. 17: "Interactions between time, mode of cognition and type of thought/action" see also section~\ref{sec:Ertaut2000}}
+      \label{fig:Ertaut cognitioninteractions}
+    \end{figure}
+
+
+
     \subsubsection{Approach}
       Exploration of professional education and learning in the workplace. The aim is the clarification of the terminology associated with \emph{non-formal learning}, \emph{implicit learning} and \emph{tacit knowledge}. Discussion of implications of these concepts to professional practice.
 
@@ -576,7 +585,7 @@
   be thwarted away. Therefore, the low availability of schools hits "the lower end of the social spectrum" hardest.\\
   Furthermore, the authors provide insights that show higher returns on schooling, when schools are scarce. In most
   studies the availability of schools is taken as granted, thereby negating the endogeneity of education.\\
-  
+
   % subsection bedi (end)
   \subsection{Takeaway} % (fold)
     \begin{itemize}
@@ -594,16 +603,30 @@
   \section{Meeting 7: Measuring Skills} % (fold)
   \label{sec:Meeting 7}
     \subsection{(Tomlinson, 1997) "Measuring competence and knowledge using employee surveys: evidence using the British Skills Survey of 1997"}
+    \label{sec:Tomlinson1997}
+
+
+  % TODO decide whether the illustration make sense to include
+  % TODO position them in the summary
+  % TODO reference them in the text, explain if necessary
+  \subsubsection{Illustrations to be included. …or not.}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{Meeting 7 dp50 - Seite 15.pdf}
+      \caption{Tomlinson, p. 15: "Selected factor score averages by occupational and sectorial groups" see also section~\ref{sec:Tomlinson1997}}
+      \label{fig:Tomlinson factorscores}
+    \end{figure}
+
       \subsubsection{Approach}
         Measuring learning in the UK and relate this to competence building systems. Get to grips with the learning economy and the role of knowledge in economic systems, draw conclusions about public policies. Uses the British Skills Survey (bss.dta, 1997) which contains self-assessment on a wide range of skills.
-        
+
       \subsubsection{Findings}
         The demonstrated micro approach to knowledge and competence measurement using employee level data is a useful complement to macro-level analysis. Certain groups of workers are well ahead in the learning and knowledge stakes, mostly comprised of managers and professional workers. There are sectoral differences, for example manufacturing is predominated by advanced problem solving skills. Services on the other hand are associated with literacy, planning and teamwork skills. High technology sectors are the only ones showing significant gains over others.
-        
+
         The impact of introduction of computerised equipment was pervasive, affecting all dimensions of knowledge. Results suggest that there are still significant gains to be made from the use of computers. Even moderate use of computers appeared to lead to significant gains in all eight competences.
-        
+
         Also certain management and workplace practices have a significant impact on learning and competence building. Especially communications within the firm are significant, such as meetings where views can be expressed, quality circles and team based working. Job mobility within firms led to faster learning than job mobility between firms. A surprising result: The relative lack of impact of social relations with fellow workers.
-  
+
   % section Meeting 7 (end)
 
   \section{Meeting 8: Depreciation of Skills} % (fold)
@@ -618,8 +641,8 @@
     because the effect is very pronounced during unemployment, when most of the skills of an individual are just not used. The
     chapter mentions a study about the "age-earning profile in case of work interruption". This study does not only take unemployment
     into consideration, but mostly women giving birth, or cases of prolonged sickness. (see figure~\ref{age_earn})
-    
-    \begin{figure}[ht]
+
+    \begin{figure}[H]
       \centering
       \includegraphics[width=12cm]{age_earn.pdf}
       \caption{De Grip, p. 4: "Age-earning Profile in Case of Career Interruption" see also section~\ref{sec:mincer}}
@@ -637,8 +660,8 @@
     (Respectively for individuals that had eight, 12, and 16 years of schooling). We can see that there is a "tipping point" at
     which the relationship turns negative (probably due to economic skills obsolescence). The resulting "skills-upgrading" is 
     strongest in computer intensive industries.
-    
-      \begin{figure}[ht]
+
+      \begin{figure}[H]
         \centering
         \includegraphics[width=12cm]{earn_exp.pdf}
         \caption{De Grip, p. 12}
@@ -651,9 +674,9 @@
     a set of skills or practices, for example by the aggregated wear and tear or by personnel turn-over. (e.g. a fast-foot
     franchise forgets faster than a ship-building company)
   \end{itemize}
- 
- 
-  \begin{figure}[ht]
+
+
+  \begin{figure}[H]
         \centering
         \includegraphics[width=12cm]{grip.pdf}
         \caption{De Grip, p. 4}
@@ -716,6 +739,52 @@
     \section{Meeting 10: Encouraging Human Capital Investment} % (fold)
   \label{sec:Meeting 10}
     \subsection{(Heckman, 2000) "Policies to foster human capital"}
+    \label{sec:Heckman2000}
+
+  % TODO decide whether the illustration make sense to include
+  % TODO position them in the summary
+  % TODO reference them in the text, explain if necessary
+  \subsubsection{Illustrations to be included. …or not.}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 10 Policies to foster human capital - Seite 7.pdf}
+      \caption{Heckman, p. 7: "Rate of return to investment in human capital." see also section~\ref{sec:Heckman2000}}
+      \label{fig:Heckman rateofreturnhumancapital}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 10 Policies to foster human capital - Seite 11.pdf}
+      \caption{Heckman, p. 11: "College participation by 18 to 24 year-old high school graduates and equivalency degree holders" see also section~\ref{sec:Heckman2000}}
+      \label{fig:Heckman collegeparticipation}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 10 Policies to foster human capital - Seite 14.pdf}
+      \caption{Heckman, p. 14: "College entry proportions of 21 to 24 year-olds who have graduated high school or obtained an equivalency degree" see also section~\ref{sec:Heckman2000}}
+      \label{fig:Heckman collegeentry}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 10 Policies to foster human capital - Seite 20.pdf}
+      \caption{Heckman, p. 20: "School quality discounted net returns to raising spending per pupil by 10\%" see also section~\ref{sec:Heckman2000}}
+      \label{fig:Heckman schoolquality}
+    \end{figure}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=12cm]{Meeting 10 Policies to foster human capital - Seite 37.pdf}
+      \caption{Heckman, p. 37: "Rates of return on investments in private sector job training" see also section~\ref{sec:Heckman2000}}
+      \label{fig:Heckman privatesectorjobtraining}
+    \end{figure}
+
+
       \subsubsection{Approach}
         The paper considers the sources of skill formation in current economies and the importance of cognitive and non-cognitive skills in producing economics and social success as well. Also academic institutions, families and firms are examined as sources of learning.
       \subsubsection{Findings}
